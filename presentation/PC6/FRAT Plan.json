@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "FRAT Plan",
+    "presentationColumns" : [ {
+      "name" : "DAY_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Plan.DAY_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "STORE_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Plan.STORE_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Spend Plan",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Plan.Spend Plan"
+    }, {
+      "name" : "UPC",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Plan.UPC",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Units Plan",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Plan.Units Plan"
+    } ]
+  }
+}

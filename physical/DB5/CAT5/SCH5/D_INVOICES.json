@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "D_INVOICES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "INVOICE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "INVOICE_NUMBER" ], [ "INVOICE_NUMBER" ], [ "INVOICE_NUMBER" ], [ "INVOICE_NUMBER" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

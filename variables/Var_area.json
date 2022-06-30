@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Var_area",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select 'Var_area', area from bip_bursting\r\nwhere email =  'VALUEOF(NQ_SESSION.USER)'"
+    } ],
+    "variables" : [ {
+      "name" : "Var_area",
+      "description" : "RAAS_",
+      "value" : "''",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

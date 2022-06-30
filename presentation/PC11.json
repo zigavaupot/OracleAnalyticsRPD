@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "PC11",
+    "sourceBusinessModel" : "businessModel:BM11",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC11.Customers"
+    }, {
+      "name" : "presentationTable:PC11.Geography"
+    }, {
+      "name" : "presentationTable:PC11.Orders"
+    }, {
+      "name" : "presentationTable:PC11.Time"
+    }, {
+      "name" : "presentationTable:PC11.Paid Metrics"
+    }, {
+      "name" : "presentationTable:PC11.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC11",
+      "nameVariable" : "MRbootcampV3"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "logicalTable" : {
+    "name" : "Organisations",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Organisation" ],
+    "logicalColumns" : [ {
+      "name" : "Organisation",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_ORGANISATIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_ORGANISATIONS.ORGANISATION_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Organisation"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_ORGANISATIONS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB5.CAT5.SCH5.D_ORGANISATIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Organisations",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Organisations",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Organisation",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Organisation" ],
+        "displayKey" : "Organisation",
+        "chronologicalKey" : [ "Organisation" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Organisations",
+        "description" : "default hierarchy",
+        "levels" : [ "All Organisations", "Organisation" ]
+      } ]
+    }
+  }
+}

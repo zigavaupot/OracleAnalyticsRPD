@@ -1,0 +1,34 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "presentationColumns" : [ {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Orders.Channel"
+    }, {
+      "name" : "Order Nr",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Orders.Order Nr"
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Orders.Order Status"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Orders.TIME_BILL_DT"
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Orders.TIME_PAID_DT"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM11.Orders",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM11.Orders.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM11.Orders.Detail",
+        "displayColumn" : "presentationColumn:PC11.Orders.Order Nr"
+      } ]
+    } ]
+  }
+}

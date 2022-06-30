@@ -1,0 +1,31 @@
+{
+  "subjectArea" : {
+    "name" : "PC5",
+    "sourceBusinessModel" : "businessModel:BM5",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC5.Customers"
+    }, {
+      "name" : "presentationTable:PC5.Invoices"
+    }, {
+      "name" : "presentationTable:PC5.Organisations"
+    }, {
+      "name" : "presentationTable:PC5.Products"
+    }, {
+      "name" : "presentationTable:PC5.Time - Invoice"
+    }, {
+      "name" : "presentationTable:PC5.Time - Order"
+    }, {
+      "name" : "presentationTable:PC5.1 - Measures"
+    }, {
+      "name" : "presentationTable:PC5.2 - Customer Modifiers"
+    }, {
+      "name" : "presentationTable:PC5.3 - Product Modifiers"
+    }, {
+      "name" : "presentationTable:PC5.9 - Other Measures"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC5",
+      "nameVariable" : "DairyGold Demo"
+    }
+  }
+}

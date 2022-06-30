@@ -1,0 +1,209 @@
+{
+  "logicalTable" : {
+    "name" : "Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Customer Account Number" ],
+    "logicalColumns" : [ {
+      "name" : "Country",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.COUNTRY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Country"
+    }, {
+      "name" : "Customer Account Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Account Number",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Parent Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_PARENT_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer Profile",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_PROFILE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DFI Market",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.DFI_MARKET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "End Application DFI",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.END_APPLICATION_DFI" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Sales Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.SALES_CATEGORY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Sales Person",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.SALES_PERSON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Strategic Rating",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.STRATEGIC_RATING" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DFI Sector",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.DFI_SECTOR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_CUSTOMERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB5.CAT5.SCH5.D_CUSTOMERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Customers",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Customers",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Country",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Country" ],
+        "displayKey" : "Country",
+        "chronologicalKey" : [ "Country" ]
+      }, {
+        "name" : "Customer",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Account Number" ],
+        "displayKey" : "Customer Account Name",
+        "additionalKeys" : [ [ "Customer Account Name", "Customer Account Number" ] ],
+        "chronologicalKey" : [ "Customer Account Number" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Customers [branch at level 'Country']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Country", "Customer" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "subjectArea" : {
+    "name" : "PC6",
+    "sourceBusinessModel" : "businessModel:BM6",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC6.CARBO Causal"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Households"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Itemsets"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Products"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Products - Consequent"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Stores"
+    }, {
+      "name" : "presentationTable:PC6.FRAT Products"
+    }, {
+      "name" : "presentationTable:PC6.FRAT Stores"
+    }, {
+      "name" : "presentationTable:PC6.Time"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Association Rules"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Frequent Itemsets"
+    }, {
+      "name" : "presentationTable:PC6.CARBO Transactions"
+    }, {
+      "name" : "presentationTable:PC6.FRAT Plan"
+    }, {
+      "name" : "presentationTable:PC6.FRAT_Transactions"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC6",
+      "nameVariable" : "Dunnhumby Data Model"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Promotions",
+    "presentationColumns" : [ {
+      "name" : "PROMO_CATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.PROMO_CATEGORY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROMO_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.PROMO_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROMO_SUBCATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.PROMO_SUBCATEGORY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROMO_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.PROMO_TOTAL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROMO_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.PROMO_TOTAL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Promotion Begin Date",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion Begin Date"
+    }, {
+      "name" : "Promotion Category",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion Category"
+    }, {
+      "name" : "Promotion Cost",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion Cost"
+    }, {
+      "name" : "Promotion End Date",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion End Date"
+    }, {
+      "name" : "Promotion Name",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion Name"
+    }, {
+      "name" : "Promotion Sub-Category",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Promotions.Promotion Sub-Category"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Promotions Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Promotions",
+      "levels" : [ {
+        "name" : "All Promotions",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Promotions.All Promotions"
+      }, {
+        "name" : "Promotion Category",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Promotions.Promotion Category",
+        "displayColumn" : "presentationColumn:PC2.Promotions.Promotion Category"
+      }, {
+        "name" : "Promotion Sub-Category",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Promotions.Promotion Sub-Category",
+        "displayColumn" : "presentationColumn:PC2.Promotions.Promotion Sub-Category"
+      }, {
+        "name" : "Promotion",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Promotions.Promotion",
+        "displayColumn" : "presentationColumn:PC2.Promotions.Promotion Name"
+      } ]
+    } ]
+  }
+}

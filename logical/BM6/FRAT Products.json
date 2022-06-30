@@ -1,0 +1,190 @@
+{
+  "logicalTable" : {
+    "name" : "FRAT Products",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Product UPC" ],
+    "logicalColumns" : [ {
+      "name" : "Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.CATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Category"
+    }, {
+      "name" : "Manufacturer",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.MANUFACTURER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Manufacturer"
+    }, {
+      "name" : "Product",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.DESCRIPTION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Product Size",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.PRODUCT_SIZE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Product UPC",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.UPC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Sub-Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.SUB_CATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sub-Category"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FRAT_PRODUCTS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.FRAT_PRODUCTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Category" ],
+        "displayKey" : "Category",
+        "chronologicalKey" : [ "Category" ]
+      }, {
+        "name" : "Sub-Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Sub-Category" ],
+        "displayKey" : "Sub-Category",
+        "chronologicalKey" : [ "Sub-Category" ]
+      }, {
+        "name" : "Product",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Product UPC" ],
+        "displayKey" : "Product",
+        "additionalKeys" : [ [ "Product" ] ],
+        "chronologicalKey" : [ "Product UPC" ]
+      }, {
+        "name" : "Manufacturer",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Manufacturer" ],
+        "displayKey" : "Manufacturer",
+        "chronologicalKey" : [ "Manufacturer" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "FRAT Products [branch at level 'Sub-Category']",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Category", "Sub-Category", "Product" ]
+      }, {
+        "name" : "FRAT Products [branch at level 'Manufacturer']",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Manufacturer", "Product" ]
+      } ]
+    },
+    "dataFilters" : [ {
+      "accessor" : "role:FRATManagers1",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = 'BAG SNACKS'",
+        "expressionObjects" : [ "logicalColumn:BM6.FRAT Products.Category" ]
+      }
+    }, {
+      "accessor" : "role:FRATManagers2",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = 'FROZEN PIZZA'",
+        "expressionObjects" : [ "logicalColumn:BM6.FRAT Products.Category" ]
+      }
+    }, {
+      "accessor" : "role:FRATSupplier1",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = 'TONYS'",
+        "expressionObjects" : [ "logicalColumn:BM6.FRAT Products.Manufacturer" ]
+      }
+    }, {
+      "accessor" : "role:FRATSupplier2",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = 'KELLOGG'",
+        "expressionObjects" : [ "logicalColumn:BM6.FRAT Products.Manufacturer" ]
+      }
+    } ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "presentationTable" : {
+    "name" : "Channels",
+    "presentationColumns" : [ {
+      "name" : "CHANNEL_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.CHANNEL_TOTAL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CHANNEL_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.CHANNEL_TOTAL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.Channel"
+    }, {
+      "name" : "Channel Class",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.Channel Class"
+    }, {
+      "name" : "Channel Class ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.Channel Class ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Channel ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Channels.Channel ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Channels Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Channels",
+      "levels" : [ {
+        "name" : "All Channels",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Channels.All Channels"
+      }, {
+        "name" : "Channel Class",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Channels.Channel Class",
+        "displayColumn" : "presentationColumn:PC2.Channels.Channel Class"
+      }, {
+        "name" : "Channel",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Channels.Channel",
+        "displayColumn" : "presentationColumn:PC2.Channels.Channel"
+      } ]
+    } ]
+  }
+}

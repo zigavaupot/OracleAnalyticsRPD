@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "PC7",
+    "sourceBusinessModel" : "businessModel:BM7",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC7.Customers"
+    }, {
+      "name" : "presentationTable:PC7.Time"
+    }, {
+      "name" : "presentationTable:PC7.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC7",
+      "nameVariable" : "MG OABOOTCAMP"
+    }
+  }
+}

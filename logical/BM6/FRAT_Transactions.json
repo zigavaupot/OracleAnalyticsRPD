@@ -1,0 +1,381 @@
+{
+  "logicalTable" : {
+    "name" : "FRAT_Transactions",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "# of Products",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.UPC" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Purchasing Households",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.HHS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Stores",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.STORE_NUM" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Base Price",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.BASE_PRICE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "In-Store Circular",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.FEATURE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "In-Store Promotion",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.DISPLAY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Price",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.PRICE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Spend",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.SPEND" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Temp Price Reduction",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.TPR_ONLY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Units",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.UNITS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Visits",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.VISITS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "WEEK_END_DATE",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.WEEK_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Spend Year-Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Visits Year-Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Visits", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Spend Year-To-Date",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TODATE(%1, %2)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Visits Year-To-Date",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TODATE(%1, %2)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Visits", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Units Year-Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Units", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Units Year-To-Date",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TODATE(%1, %2)",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Units", "logicalLevel:BM6.Time.Year" ]
+        }
+      }
+    }, {
+      "name" : "Units YoY Index",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Units", "logicalColumn:BM6.FRAT_Transactions.Units Year-Ago" ]
+        }
+      }
+    }, {
+      "name" : "Spend YoY Index",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalColumn:BM6.FRAT_Transactions.Spend Year-Ago" ]
+        }
+      }
+    }, {
+      "name" : "Visits YoY Index",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Visits", "logicalColumn:BM6.FRAT_Transactions.Visits Year-Ago" ]
+        }
+      }
+    }, {
+      "name" : "Spend By Category and Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_TRANSACTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.SPEND" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:BM6.FRAT Stores.Total", "logicalLevel:BM6.Time.Year", "logicalLevel:BM6.FRAT Products.Category" ]
+      }
+    }, {
+      "name" : "Avg Spend per Visit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalColumn:BM6.FRAT_Transactions.Visits" ]
+        }
+      }
+    }, {
+      "name" : "Avg Spend per Unit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalColumn:BM6.FRAT_Transactions.Units" ]
+        }
+      }
+    }, {
+      "name" : "Spend Act vs Plan",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:BM6.FRAT_Transactions.Spend", "logicalColumn:BM6.FRAT Plan.Spend Plan" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FRAT_TRANSACTIONS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.FRAT_TRANSACTIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM6.FRAT Products",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM6.FRAT Stores",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM6.Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

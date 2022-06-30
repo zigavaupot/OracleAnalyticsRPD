@@ -1,0 +1,41 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Products",
+    "presentationColumns" : [ {
+      "name" : "Antecedent",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.Antecedent"
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.Brand"
+    }, {
+      "name" : "Commodity",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.Commodity"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.Product"
+    }, {
+      "name" : "Product Size",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.Product Size"
+    }, {
+      "name" : "UPC",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products.UPC"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Products.Total"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Products.Brand",
+        "displayColumn" : "presentationColumn:PC6.CARBO Products.Brand"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Products.Product",
+        "displayColumn" : "presentationColumn:PC6.CARBO Products.Product"
+      } ]
+    } ]
+  }
+}

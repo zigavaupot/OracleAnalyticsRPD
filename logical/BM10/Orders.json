@@ -1,0 +1,136 @@
+{
+  "logicalTable" : {
+    "name" : "Orders",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Order Number" ],
+    "logicalColumns" : [ {
+      "name" : "Channel",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VD_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.CHANNEL_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Channel"
+    }, {
+      "name" : "Order Number",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VD_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.ORDER_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Order"
+    }, {
+      "name" : "Order Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VD_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.ORDER_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Order Status"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VD_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.TIME_BILL_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TIME_PAID_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VD_ORDERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.TIME_PAID_DT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "VD_ORDERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB10.CAT10.SCH10.VD_ORDERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Orders",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Orders",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Channel",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Channel" ],
+        "displayKey" : "Channel",
+        "chronologicalKey" : [ "Channel" ]
+      }, {
+        "name" : "Order",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Number" ],
+        "displayKey" : "Order Number",
+        "chronologicalKey" : [ "Order Number" ]
+      }, {
+        "name" : "Order Status",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Status" ],
+        "displayKey" : "Order Status",
+        "chronologicalKey" : [ "Order Status" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Orders [branch at level 'Channel']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Orders", "Channel", "Order" ]
+      }, {
+        "name" : "Orders [branch at level 'Order Status']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Orders", "Order Status", "Order" ]
+      } ]
+    }
+  }
+}

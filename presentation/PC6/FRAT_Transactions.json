@@ -1,0 +1,84 @@
+{
+  "presentationTable" : {
+    "name" : "FRAT_Transactions",
+    "presentationColumns" : [ {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.# of Products"
+    }, {
+      "name" : "# of Purchasing Households",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.# of Purchasing Households"
+    }, {
+      "name" : "# of Stores",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.# of Stores"
+    }, {
+      "name" : "Avg Spend per Unit",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Avg Spend per Unit"
+    }, {
+      "name" : "Avg Spend per Visit",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Avg Spend per Visit"
+    }, {
+      "name" : "Base Price",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Base Price"
+    }, {
+      "name" : "In-Store Circular",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.In-Store Circular"
+    }, {
+      "name" : "In-Store Promotion",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.In-Store Promotion"
+    }, {
+      "name" : "Price",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Price"
+    }, {
+      "name" : "Spend",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend"
+    }, {
+      "name" : "Spend Act vs Plan",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend Act vs Plan"
+    }, {
+      "name" : "Spend By Category and Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend By Category and Year"
+    }, {
+      "name" : "Spend Year-Ago",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend Year-Ago"
+    }, {
+      "name" : "Spend Year-To-Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend Year-To-Date"
+    }, {
+      "name" : "Spend YoY Index",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Spend YoY Index"
+    }, {
+      "name" : "Temp Price Reduction",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Temp Price Reduction"
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Units"
+    }, {
+      "name" : "Units Year-Ago",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Units Year-Ago"
+    }, {
+      "name" : "Units Year-To-Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Units Year-To-Date"
+    }, {
+      "name" : "Units YoY Index",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Units YoY Index"
+    }, {
+      "name" : "Visits",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Visits"
+    }, {
+      "name" : "Visits Year-Ago",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Visits Year-Ago"
+    }, {
+      "name" : "Visits Year-To-Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Visits Year-To-Date"
+    }, {
+      "name" : "Visits YoY Index",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.Visits YoY Index"
+    }, {
+      "name" : "WEEK_END_DATE",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT_Transactions.WEEK_END_DATE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

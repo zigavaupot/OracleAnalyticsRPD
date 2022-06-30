@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "D_PRODUCTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PROD_BRAND",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PROD_LOB",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_DSC",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROD_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "PROD_ITEM_KEY" ], [ "PROD_ITEM_KEY" ], [ "PROD_ITEM_KEY" ], [ "PROD_ITEM_KEY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

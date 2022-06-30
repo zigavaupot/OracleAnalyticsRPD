@@ -1,0 +1,37 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Products - Consequent",
+    "presentationColumns" : [ {
+      "name" : "Consequent",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent"
+    }, {
+      "name" : "Consequent Brand",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent Brand"
+    }, {
+      "name" : "Consequent Commodity",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent Commodity"
+    }, {
+      "name" : "Consequent Product",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent Product"
+    }, {
+      "name" : "Consequent Product Size",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent Product Size"
+    }, {
+      "name" : "Consequent UPC",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Products - Consequent.Consequent UPC"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Products - Consequent",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Products - Consequent.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Products - Consequent.Detail",
+        "displayColumn" : "presentationColumn:PC6.CARBO Products - Consequent.Consequent"
+      } ]
+    } ]
+  }
+}

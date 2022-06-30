@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO_HOUSEHOLDS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "HOUSEHOLD",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "HOUSEHOLD" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

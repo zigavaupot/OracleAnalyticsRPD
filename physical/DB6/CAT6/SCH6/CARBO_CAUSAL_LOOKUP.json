@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO_CAUSAL_LOOKUP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DISPLAY_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "FEATURE_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "GEOGRAPHY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WEEK",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "STORE", "UPC", "WEEK", "GEOGRAPHY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

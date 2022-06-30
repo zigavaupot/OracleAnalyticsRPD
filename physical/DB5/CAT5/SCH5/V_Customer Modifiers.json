@@ -1,0 +1,189 @@
+{
+  "physicalTable" : {
+    "name" : "V_Customer Modifiers",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AGE_RESTRICTION_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "AGE_RESTRICTION_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "COMMISSIONS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CREDIT_INSURANCE_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUSTOMER_MODIFIERS_TOTAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DOCUMENTATION_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "DOCUMENTATION_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "EXTRA_LABELLING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "EXTRA_LABELLING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "ITEM_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "LETTERS_OF_CREDIT_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "LETTERS_CREDIT_FACT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "LOOSE_LOADING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "LOOSE_LOADING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "ORDERED_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "ORGANISATION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : false
+    }, {
+      "name" : "SPECIALISED_PALLETS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "SPECIALIZED_PALLETS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "STORAGE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "TRANSPORT_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "WORKING_CAPITAL_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "WORKING_CAPITAL_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.CUSTOMER_ACCOUNT_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_INVOICES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.INVOICE_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_INVOICES.INVOICE_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_ORGANISATIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ORGANISATION_NAME",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_ORGANISATIONS.ORGANISATION_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ITEM_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ORDERED_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME_INV",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.INVOICE_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_DT"
+      } ]
+    } ]
+  }
+}

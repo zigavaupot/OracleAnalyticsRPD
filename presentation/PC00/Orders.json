@@ -1,0 +1,53 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "presentationColumns" : [ {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Orders.Channel"
+    }, {
+      "name" : "Order ID",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Orders.Order ID"
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Orders.Order Status"
+    }, {
+      "name" : "Time Bill Date",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Orders.Time Bill Date"
+    }, {
+      "name" : "Time Paid Date",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Orders.Time Paid Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Channel Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM0.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.All Orders"
+      }, {
+        "name" : "Channel",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.Channel",
+        "displayColumn" : "presentationColumn:PC00.Orders.Channel"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.Order",
+        "displayColumn" : "presentationColumn:PC00.Orders.Order ID"
+      } ]
+    }, {
+      "name" : "Order Status Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM0.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.All Orders"
+      }, {
+        "name" : "Order Status",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.Order Status",
+        "displayColumn" : "presentationColumn:PC00.Orders.Order Status"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Orders.Order",
+        "displayColumn" : "presentationColumn:PC00.Orders.Order ID"
+      } ]
+    } ]
+  }
+}

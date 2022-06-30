@@ -1,0 +1,140 @@
+{
+  "presentationTable": {
+    "name": "1 - Measures",
+    "presentationColumns": [ {
+        "name": "Credit Debit Note Value",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Credit Debit Note Value"
+      },
+      {
+        "name": "Excess Storage",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Excess Storage"
+      },
+      {
+        "name": "FIXED_MILK_PRICE_MODF_EUR_PER_",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.FIXED_MILK_PRICE_MODF_EUR_PER_",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Gross Sales Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Gross Sales Total ¤"
+      },
+      {
+        "name": "Gross Selling Price",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Gross Selling Price"
+      },
+      {
+        "name": "INVOICE_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.INVOICE_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.ITEM_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Invoice Milk Cost ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Invoice Milk Cost ¤"
+      },
+      {
+        "name": "Invoice Value ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Invoice Value ¤"
+      },
+      {
+        "name": "MILK_SOLIDS_COST",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.MILK_SOLIDS_COST"
+      },
+      {
+        "name": "Marginal Contn Total",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Marginal Contn Total"
+      },
+      {
+        "name": "Net Contribution Per Ton",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Net Contribution Per Ton"
+      },
+      {
+        "name": "Net Contribution ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Net Contribution ¤"
+      },
+      {
+        "name": "Net Return ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Net Return ¤"
+      },
+      {
+        "name": "Net Return ¤ Per Ton",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Net Return ¤ Per Ton"
+      },
+      {
+        "name": "Net Sales Return ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Net Sales Return ¤"
+      },
+      {
+        "name": "No of Customer Accounts",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.No of Customer Accounts"
+      },
+      {
+        "name": "No of Invoices",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.No of Invoices"
+      },
+      {
+        "name": "Non-Prem Discount Desc",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Non-Prem Discount Desc"
+      },
+      {
+        "name": "Non-Prem Discount ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Non-Prem Discount ¤ Tn"
+      },
+      {
+        "name": "Normal Storage",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Normal Storage"
+      },
+      {
+        "name": "ORDERED_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.ORDERED_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.ORGANISATION_NAME",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Ornua Realisations Bonus",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Ornua Realisations Bonus"
+      },
+      {
+        "name": "Rebates ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Rebates ¤"
+      },
+      {
+        "name": "Rebates ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Rebates ¤ Tn"
+      },
+      {
+        "name": "Shipped Qty Tns",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Shipped Qty Tns"
+      },
+      {
+        "name": "Year End Adjustment",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Year End Adjustment"
+      },
+      {
+        "name": "Year End Adjustment 2",
+        "sourceLogicalColumn": "logicalColumn:BM5.1 - Measures.Year End Adjustment 2",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      }
+    ]
+  }
+}

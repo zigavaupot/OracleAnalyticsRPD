@@ -1,0 +1,147 @@
+{
+  "logicalTable" : {
+    "name" : "Channels",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Channel ID" ],
+    "logicalColumns" : [ {
+      "name" : "CHANNEL_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CHANNEL_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_TOTAL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Channel",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Channel",
+      "dataFilters" : [ {
+        "accessor" : "role:DTLDemoAppRole",
+        "status" : "ENABLED",
+        "filter" : {
+          "expressionTemplate" : "%1 = 'Internet'",
+          "expressionObjects" : [ "logicalColumn:BM2.Channels.Channel" ]
+        }
+      } ]
+    }, {
+      "name" : "Channel Class",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_CLASS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Channel Class"
+    }, {
+      "name" : "Channel Class ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_CLASS_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Channel ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CHANNELS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Channel"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SH_CHANNELS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB2.CAT2.SCH2.SH_CHANNELS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Channels",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Channels",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Channel Class",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Channel Class" ],
+        "displayKey" : "Channel Class",
+        "chronologicalKey" : [ "Channel Class" ]
+      }, {
+        "name" : "Channel",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Channel ID" ],
+        "displayKey" : "Channel",
+        "additionalKeys" : [ [ "Channel" ] ],
+        "chronologicalKey" : [ "Channel ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Channels [branch at level 'Channel Class']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Channels", "Channel Class", "Channel" ]
+      } ]
+    }
+  }
+}

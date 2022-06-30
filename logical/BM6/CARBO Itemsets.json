@@ -1,0 +1,72 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Itemsets",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Itemset ID" ],
+    "logicalColumns" : [ {
+      "name" : "Itemset ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO Itemsets_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO Itemsets.ITEMSET_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Number of Items",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO Itemsets_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO Itemsets.NUMBER_OF_ITEMS" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CARBO Itemsets_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.CARBO Itemsets" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Itemset ID" ],
+        "displayKey" : "Itemset ID",
+        "chronologicalKey" : [ "Itemset ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Itemsets",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

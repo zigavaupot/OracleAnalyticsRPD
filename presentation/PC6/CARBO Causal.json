@@ -1,0 +1,37 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Causal",
+    "presentationColumns" : [ {
+      "name" : "Display",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.Display"
+    }, {
+      "name" : "Feature",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.Feature"
+    }, {
+      "name" : "Geography",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.Geography"
+    }, {
+      "name" : "Store",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.Store"
+    }, {
+      "name" : "UPC",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.UPC"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Causal.Week"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Causal",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Causal.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Causal.Detail",
+        "displayColumn" : "presentationColumn:PC6.CARBO Causal.Geography"
+      } ]
+    } ]
+  }
+}

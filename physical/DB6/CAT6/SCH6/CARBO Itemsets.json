@@ -1,0 +1,22 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO Itemsets",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ITEMSET_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_ITEMS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ITEMSET_ID" ], [ "ITEMSET_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

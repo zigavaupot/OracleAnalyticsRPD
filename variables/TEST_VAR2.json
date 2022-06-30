@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "TEST_VAR2",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select 'TEST_VAR2', sysdate from dual"
+    } ],
+    "variables" : [ {
+      "name" : "TEST_VAR2",
+      "description" : "RAAS_",
+      "value" : "''",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

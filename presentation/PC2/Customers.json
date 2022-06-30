@@ -1,0 +1,216 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "COUNTRY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_ISO_CODE",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_ISO_CODE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_NAME_HIST",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_NAME_HIST",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_REGION_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_REGION_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_SUBREGION_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_SUBREGION_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_TOTAL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.COUNTRY_TOTAL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_CITY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_CITY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_EFF_FROM",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_EFF_FROM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_EFF_TO",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_EFF_TO",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_MAIN_PHONE_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_MAIN_PHONE_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_SRC_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_SRC_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_STATE_PROVINCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_STATE_PROVINCE_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_TOTAL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_TOTAL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_VALID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.CUST_VALID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.City"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Country"
+    }, {
+      "name" : "Customer Credit Limit",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Credit Limit"
+    }, {
+      "name" : "Customer First Name",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer First Name"
+    }, {
+      "name" : "Customer Gender",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Gender"
+    }, {
+      "name" : "Customer Last Name",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Last Name"
+    }, {
+      "name" : "Customer Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Marital Status"
+    }, {
+      "name" : "Customer Street Address",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Street Address"
+    }, {
+      "name" : "Customer Year of Birth",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Customer Year of Birth"
+    }, {
+      "name" : "E-Mail",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.E-Mail"
+    }, {
+      "name" : "Income Level",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Income Level"
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Postal Code"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Region"
+    }, {
+      "name" : "State-Province",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.State-Province"
+    }, {
+      "name" : "Sub-Region",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Customers.Sub-Region"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Gender Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.All Customers"
+      }, {
+        "name" : "Customer Gender",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Customer Gender",
+        "displayColumn" : "presentationColumn:PC2.Customers.Customer Gender"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC2.Customers.Customer First Name"
+      } ]
+    }, {
+      "name" : "Marital Status Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.All Customers"
+      }, {
+        "name" : "Customer Marital Status",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Customer Marital Status",
+        "displayColumn" : "presentationColumn:PC2.Customers.Customer Marital Status"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC2.Customers.Customer First Name"
+      } ]
+    }, {
+      "name" : "Geography Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.All Customers"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Region",
+        "displayColumn" : "presentationColumn:PC2.Customers.Region"
+      }, {
+        "name" : "Sub-Region",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Sub-Region",
+        "displayColumn" : "presentationColumn:PC2.Customers.Sub-Region"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Country",
+        "displayColumn" : "presentationColumn:PC2.Customers.Country"
+      }, {
+        "name" : "State-Province",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.State-Province",
+        "displayColumn" : "presentationColumn:PC2.Customers.State-Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.City",
+        "displayColumn" : "presentationColumn:PC2.Customers.City"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC2.Customers.Customer First Name"
+      } ]
+    } ]
+  }
+}

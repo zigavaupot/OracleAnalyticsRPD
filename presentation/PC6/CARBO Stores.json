@@ -1,0 +1,58 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Stores",
+    "presentationColumns" : [ {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.City"
+    }, {
+      "name" : "County",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.County"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.Longitude"
+    }, {
+      "name" : "Population",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.Population"
+    }, {
+      "name" : "State",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.State"
+    }, {
+      "name" : "State Code",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.State Code"
+    }, {
+      "name" : "Store",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.Store"
+    }, {
+      "name" : "ZIP Code",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Stores.ZIP Code"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Stores Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Stores",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Stores.Total"
+      }, {
+        "name" : "State",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Stores.State",
+        "displayColumn" : "presentationColumn:PC6.CARBO Stores.State"
+      }, {
+        "name" : "County",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Stores.County",
+        "displayColumn" : "presentationColumn:PC6.CARBO Stores.County"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Stores.City",
+        "displayColumn" : "presentationColumn:PC6.CARBO Stores.City"
+      }, {
+        "name" : "Store",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Stores.Store",
+        "displayColumn" : "presentationColumn:PC6.CARBO Stores.Store"
+      } ]
+    } ]
+  }
+}

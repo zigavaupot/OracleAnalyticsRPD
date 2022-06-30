@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "PC13",
+    "sourceBusinessModel" : "businessModel:BM13",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC13.Customers"
+    }, {
+      "name" : "presentationTable:PC13.Time"
+    }, {
+      "name" : "presentationTable:PC13.Payment Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC13",
+      "nameVariable" : "HA OABOOTCAMP"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "physicalTable" : {
+    "name" : "SH_CUSTOMERS_COUNTRY",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COUNTRY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_ISO_CODE",
+      "dataType" : "CHAR",
+      "length" : 2,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_NAME_HIST",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY_REGION_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_SUBREGION_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_TOTAL",
+      "dataType" : "VARCHAR",
+      "length" : 11,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_CITY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_EFF_FROM",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CUST_EFF_TO",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_MAIN_PHONE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 25,
+      "nullable" : false
+    }, {
+      "name" : "CUST_SRC_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_STATE_PROVINCE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_TOTAL",
+      "dataType" : "VARCHAR",
+      "length" : 14,
+      "nullable" : false
+    }, {
+      "name" : "CUST_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_VALID",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CUST_CITY",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "CUST_CREDIT_LIMIT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_FIRST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CUST_GENDER",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "CUST_LAST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "CUST_MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "CUST_STREET_ADDRESS",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "CUST_YEAR_OF_BIRTH",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_EMAIL",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "CUST_INCOME_LEVEL",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "CUST_POSTAL_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_REGION",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CUST_STATE_PROVINCE",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : false
+    }, {
+      "name" : "COUNTRY_SUBREGION",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CUST_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

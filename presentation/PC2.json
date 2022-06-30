@@ -1,0 +1,25 @@
+{
+  "subjectArea" : {
+    "name" : "PC2",
+    "sourceBusinessModel" : "businessModel:BM2",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC2.Channels"
+    }, {
+      "name" : "presentationTable:PC2.Customers"
+    }, {
+      "name" : "presentationTable:PC2.Products"
+    }, {
+      "name" : "presentationTable:PC2.Promotions"
+    }, {
+      "name" : "presentationTable:PC2.Times"
+    }, {
+      "name" : "presentationTable:PC2.Costs"
+    }, {
+      "name" : "presentationTable:PC2.Sales"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC2",
+      "nameVariable" : "Sales Data Model"
+    }
+  }
+}

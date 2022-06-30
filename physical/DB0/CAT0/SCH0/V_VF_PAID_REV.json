@@ -1,0 +1,97 @@
+{
+  "physicalTable" : {
+    "name" : "V_VF_PAID_REV",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME_PAID_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB0.CAT0.SCH0.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB0.CAT0.SCH0.V_VF_PAID_REV.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:DB0.CAT0.SCH0.D_CUSTOMERS.CUST_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB0.CAT0.SCH0.D_GEOGRAPHY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB0.CAT0.SCH0.V_VF_PAID_REV.ADDR_KEY",
+        "rightColumn" : "physicalColumn:DB0.CAT0.SCH0.D_GEOGRAPHY.ADDR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB0.CAT0.SCH0.D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB0.CAT0.SCH0.V_VF_PAID_REV.PROD_ITEM_KEY",
+        "rightColumn" : "physicalColumn:DB0.CAT0.SCH0.D_PRODUCTS.PROD_ITEM_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB0.CAT0.SCH0.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB0.CAT0.SCH0.V_VF_PAID_REV.TIME_PAID_DT",
+        "rightColumn" : "physicalColumn:DB0.CAT0.SCH0.D_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB0.CAT0.SCH0.VD_ORDERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB0.CAT0.SCH0.V_VF_PAID_REV.ORDER_KEY",
+        "rightColumn" : "physicalColumn:DB0.CAT0.SCH0.VD_ORDERS.ORDER_KEY"
+      } ]
+    } ]
+  }
+}

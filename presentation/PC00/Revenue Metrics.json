@@ -1,0 +1,48 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.# of Products"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Order Size",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Avg Order Size"
+    }, {
+      "name" : "Billed Units",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Billed Units"
+    }, {
+      "name" : "Discount Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Discount Ratio %"
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Discount Value"
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Revenue"
+    }, {
+      "name" : "Revenue (Region)",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Revenue (Region)"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Revenue Metrics.Unit Price"
+    } ]
+  }
+}

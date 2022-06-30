@@ -1,0 +1,25 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Itemsets",
+    "presentationColumns" : [ {
+      "name" : "Itemset ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Itemsets.Itemset ID"
+    }, {
+      "name" : "Number of Items",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Itemsets.Number of Items"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Itemsets",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Itemsets.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Itemsets.Detail",
+        "displayColumn" : "presentationColumn:PC6.CARBO Itemsets.Itemset ID"
+      } ]
+    } ]
+  }
+}

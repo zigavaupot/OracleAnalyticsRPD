@@ -1,0 +1,588 @@
+{
+  "logicalTable": {
+    "name": "1 - Measures",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Credit Debit Note Value",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.CREDIT_DEBIT_NOTE_VALUE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "No of Customer Accounts",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.CUSTOMER_ACCOUNT_NUMBER"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "COUNT_DISTINCT"
+        }
+      },
+      {
+        "name": "Excess Storage",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.EXCESS_STORAGE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "FIXED_MILK_PRICE_MODF_EUR_PER_",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.FIXED_MILK_PRICE_MODF_EUR_PER_"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Gross Sales Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.GROSS_SALES_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Gross Selling Price",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.GROSS_SELLING_PRICE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "AVG"
+        }
+      },
+      {
+        "name": "INVOICE_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Invoice Milk Cost ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_MILK_COST_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "No of Invoices",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_NUMBER"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "COUNT_DISTINCT"
+        }
+      },
+      {
+        "name": "Invoice Value ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_VALUE_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.ITEM_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Marginal Contn Total",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.MARGINAL_CONTN_TOTAL"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Net Contribution ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NET_CONTRIBUTION_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Net Return ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NET_RETURN_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Net Sales Return ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NET_SALES_RETURN_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Normal Storage",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NORMAL_STORAGE"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "ORDERED_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.ORDERED_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.ORGANISATION_NAME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ornua Realisations Bonus",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.ORNUA_REALISATIONS_BONUS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Rebates ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.REBATES_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shipped Qty Tns",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.SHIPPED_QTY_TNS"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Year End Adjustment",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.YEAR_END_ADJUSTMENT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Year End Adjustment 2",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.YEAR_END_ADJUSTMENT_2"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Non-Prem Discount ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NONPREM_DISCOUNT_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Net Contribution Per Ton",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NET_CONTRIBUTION_PER_TON"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Non-Prem Discount Desc",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NONPREM_DISCOUNT_DESC"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Net Return ¤ Per Ton",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.NET_RETURN_EUR_PER_TON"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Rebates ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.REBATE_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "MILK_SOLIDS_COST",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Measures_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Measures.MILK_SOLIDS_COST"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "V_Measures_LTS",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:DB5.CAT5.SCH5.V_Measures"
+          ]
+        }
+      }
+    ],
+    "joins": [      {
+        "rightTable": "logicalTable:BM5.Customers",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Invoices",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Organisations",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Products",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Invoice",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Order",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

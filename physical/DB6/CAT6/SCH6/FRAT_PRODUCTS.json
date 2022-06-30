@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "FRAT_PRODUCTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MANUFACTURER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_SIZE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SUB_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "UPC" ], [ "UPC" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

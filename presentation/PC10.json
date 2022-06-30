@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "PC10",
+    "sourceBusinessModel" : "businessModel:BM10",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC10.Customers"
+    }, {
+      "name" : "presentationTable:PC10.Geography"
+    }, {
+      "name" : "presentationTable:PC10.Orders"
+    }, {
+      "name" : "presentationTable:PC10.Time"
+    }, {
+      "name" : "presentationTable:PC10.Paid Metrics"
+    }, {
+      "name" : "presentationTable:PC10.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC10",
+      "nameVariable" : "KP OABOOTCAMP"
+    }
+  }
+}

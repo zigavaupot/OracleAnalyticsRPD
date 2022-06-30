@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "VD_ORDERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHANNEL_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "TIME_PAID_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ORDER_KEY" ], [ "ORDER_KEY" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

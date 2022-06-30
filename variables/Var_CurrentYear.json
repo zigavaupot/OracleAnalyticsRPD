@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Var_CurrentYear",
+    "type" : "GLOBAL",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select '2012' from dual "
+    } ],
+    "variables" : [ {
+      "name" : "Var_CurrentYear",
+      "description" : "RAAS_",
+      "value" : "'2012'"
+    } ],
+    "runSchedule" : {
+      "interval" : 1,
+      "intervalUnit" : "DAYS",
+      "startingOn" : "2020-12-16 08:31:36"
+    },
+    "disable" : false
+  }
+}

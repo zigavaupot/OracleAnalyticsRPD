@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "PC4",
+    "sourceBusinessModel" : "businessModel:BM4",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC4.Customers"
+    }, {
+      "name" : "presentationTable:PC4.Geography"
+    }, {
+      "name" : "presentationTable:PC4.Orders"
+    }, {
+      "name" : "presentationTable:PC4.Time"
+    }, {
+      "name" : "presentationTable:PC4.Payment Metrics"
+    }, {
+      "name" : "presentationTable:PC4.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC4",
+      "nameVariable" : "OA Bootcamp DataModeler DM"
+    }
+  }
+}

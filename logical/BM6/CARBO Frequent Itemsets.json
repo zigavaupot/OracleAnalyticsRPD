@@ -1,0 +1,118 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Frequent Itemsets",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "# of Itemsets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.ITEMSET_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "ITEM_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.ITEM_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ITEM_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.ITEM_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Itemset Support",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.SUPPORT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "NUMBER_OF_ITEMS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.NUMBER_OF_ITEMS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PARTITION_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DM$VTAR_CARBO_TRANS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.PARTITION_NAME" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DM$VTAR_CARBO_TRANS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM6.CARBO Itemsets",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM6.CARBO Products",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

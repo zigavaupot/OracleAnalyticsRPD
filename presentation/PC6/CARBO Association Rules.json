@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Association Rules",
+    "presentationColumns" : [ {
+      "name" : "Antecedent Support",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Antecedent Support"
+    }, {
+      "name" : "Antecendent",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Antecendent"
+    }, {
+      "name" : "Consequent",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Consequent"
+    }, {
+      "name" : "Consequent Support",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Consequent Support"
+    }, {
+      "name" : "Number of Items",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Number of Items"
+    }, {
+      "name" : "PARTITION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.PARTITION_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Rule Confidence",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule Confidence"
+    }, {
+      "name" : "Rule ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule ID"
+    }, {
+      "name" : "Rule Itemset ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule Itemset ID"
+    }, {
+      "name" : "Rule Lift",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule Lift"
+    }, {
+      "name" : "Rule Reverse Confidence",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule Reverse Confidence"
+    }, {
+      "name" : "Rule Support",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Association Rules.Rule Support"
+    } ]
+  }
+}

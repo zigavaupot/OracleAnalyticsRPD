@@ -1,0 +1,58 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Households",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Household ID" ],
+    "logicalColumns" : [ {
+      "name" : "Household ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_HOUSEHOLDS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_HOUSEHOLDS.HOUSEHOLD" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CARBO_HOUSEHOLDS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.CARBO_HOUSEHOLDS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Household ID" ],
+        "displayKey" : "Household ID",
+        "chronologicalKey" : [ "Household ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Households",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

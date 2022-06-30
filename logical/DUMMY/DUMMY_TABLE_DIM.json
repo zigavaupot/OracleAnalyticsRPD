@@ -1,0 +1,46 @@
+{
+  "logicalTable" : {
+    "name" : "DUMMY_TABLE_DIM",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "DUMMY_COLUMN",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DUMMY_TABLE_DIM",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DUMMY.DUMMY_TABLE_DIM.DUMMY_COLUMN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DUMMY_COLUMN2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DUMMY_TABLE_DIM",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DUMMY.DUMMY_TABLE_DIM.DUMMY_COLUMN" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DUMMY_TABLE_DIM",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DUMMY.DUMMY_TABLE_DIM" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "DUMMY_COLUMN" ]
+  }
+}

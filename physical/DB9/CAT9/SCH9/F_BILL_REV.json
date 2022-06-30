@@ -1,0 +1,105 @@
+{
+  "physicalTable" : {
+    "name" : "F_BILL_REV",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CHANNEL_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "TIME_PAID_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB9.CAT9.SCH9.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB9.CAT9.SCH9.F_BILL_REV.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:DB9.CAT9.SCH9.D_CUSTOMERS.CUST_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB9.CAT9.SCH9.D_GEOGRAPHY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB9.CAT9.SCH9.F_BILL_REV.ADDR_KEY",
+        "rightColumn" : "physicalColumn:DB9.CAT9.SCH9.D_GEOGRAPHY.ADDR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB9.CAT9.SCH9.D_TIME_MC",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB9.CAT9.SCH9.F_BILL_REV.TIME_PAID_DT",
+        "rightColumn" : "physicalColumn:DB9.CAT9.SCH9.D_TIME_MC.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB9.CAT9.SCH9.VD_ORDERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB9.CAT9.SCH9.F_BILL_REV.ORDER_KEY",
+        "rightColumn" : "physicalColumn:DB9.CAT9.SCH9.VD_ORDERS.ORDER_KEY"
+      } ]
+    } ]
+  }
+}

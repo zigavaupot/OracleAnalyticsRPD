@@ -1,0 +1,387 @@
+{
+  "presentationTable" : {
+    "name" : "9 - Other Measures",
+    "presentationColumns" : [ {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ADJ_BENCHMARK_EUR_PER_TON"
+    }, {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON_EXTE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ADJ_BENCHMARK_EUR_PER_TON_EXTE"
+    }, {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON_EX_1",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ADJ_BENCHMARK_EUR_PER_TON_EX_1"
+    }, {
+      "name" : "AGE_RESTRICTION_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.AGE_RESTRICTION_EUR"
+    }, {
+      "name" : "AGE_RESTRICTION_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.AGE_RESTRICTION_EUR_TN"
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BENCHMARK_EUR_PER_TON"
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON_EXTERNAL",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BENCHMARK_EUR_PER_TON_EXTERNAL"
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON_EXTERN_1",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BENCHMARK_EUR_PER_TON_EXTERN_1"
+    }, {
+      "name" : "BIRDS_EYE_SERVICES_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BIRDS_EYE_SERVICES_EUR"
+    }, {
+      "name" : "BIRDS_EYE_SERVICES_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BIRDS_EYE_SERVICES_EUR_TN"
+    }, {
+      "name" : "BOM_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BOM_EUR"
+    }, {
+      "name" : "BOM_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BOM_EUR_TN"
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BUREAU_DE_VERITAS_EUR"
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.BUREAU_DE_VERITAS_EUR_TN"
+    }, {
+      "name" : "CENTRAL_COSTS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CENTRAL_COSTS_EUR"
+    }, {
+      "name" : "CENTRAL_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CENTRAL_EUR_TN"
+    }, {
+      "name" : "COMMISSIONS_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.COMMISSIONS_TOTAL_EUR"
+    }, {
+      "name" : "CONVERSION_COSTS_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CONVERSION_COSTS_TOTAL_EUR"
+    }, {
+      "name" : "COUNTRY",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.COUNTRY"
+    }, {
+      "name" : "CREDIT_DEBIT_NOTE_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CREDIT_DEBIT_NOTE_VALUE"
+    }, {
+      "name" : "CREDIT_INSURANCE_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CREDIT_INSURANCE_TOTAL_EUR"
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_ACCOUNT_NAME"
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_ACCOUNT_NUMBER"
+    }, {
+      "name" : "CUSTOMER_CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_CATEGORY"
+    }, {
+      "name" : "CUSTOMER_MODIFIERS_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_MODIFIERS_TOTAL"
+    }, {
+      "name" : "CUSTOMER_PARENT_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_PARENT_NAME"
+    }, {
+      "name" : "CUSTOMER_PROFILE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.CUSTOMER_PROFILE"
+    }, {
+      "name" : "DEPRECIATION_COSTS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DEPRECIATION_COSTS_EUR"
+    }, {
+      "name" : "DEPRECIATION_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DEPRECIATION_EUR_TN"
+    }, {
+      "name" : "DFI_MARKET",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DFI_MARKET"
+    }, {
+      "name" : "DFI_SECTOR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DFI_SECTOR"
+    }, {
+      "name" : "DIRECT_COSTS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DIRECT_COSTS_EUR"
+    }, {
+      "name" : "DIRECT_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DIRECT_EUR_TN"
+    }, {
+      "name" : "DOCUMENTATION_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DOCUMENTATION_EUR"
+    }, {
+      "name" : "DOCUMENTATION_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DOCUMENTATION_EUR_TN"
+    }, {
+      "name" : "DOWNGRADE_FLAG",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.DOWNGRADE_FLAG"
+    }, {
+      "name" : "END_APPLICATION_DFI",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.END_APPLICATION_DFI"
+    }, {
+      "name" : "EXCESS_STORAGE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXCESS_STORAGE"
+    }, {
+      "name" : "EXTERNAL2_BENCHMARK_NAME_ORDE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTERNAL2_BENCHMARK_NAME_ORDE"
+    }, {
+      "name" : "EXTERNAL2_BENCHMARK_PRICE_ORD",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTERNAL2_BENCHMARK_PRICE_ORD"
+    }, {
+      "name" : "EXTERNAL_BENCHMARK_NAME_ORDER",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTERNAL_BENCHMARK_NAME_ORDER"
+    }, {
+      "name" : "EXTERNAL_BENCHMARK_PRICE_ORDE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTERNAL_BENCHMARK_PRICE_ORDE"
+    }, {
+      "name" : "EXTRA_LABELLING_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTRA_LABELLING_EUR"
+    }, {
+      "name" : "EXTRA_LABELLING_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.EXTRA_LABELLING_EUR_TN"
+    }, {
+      "name" : "E_PALLET_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.E_PALLET_EUR_TN"
+    }, {
+      "name" : "FIXED_MILK_PRICE_MODF_EUR_PER_",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.FIXED_MILK_PRICE_MODF_EUR_PER_"
+    }, {
+      "name" : "GROSS_SALES_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.GROSS_SALES_TOTAL_EUR"
+    }, {
+      "name" : "GROSS_SELLING_PRICE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.GROSS_SELLING_PRICE"
+    }, {
+      "name" : "INDIRECT_COSTS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INDIRECT_COSTS_EUR"
+    }, {
+      "name" : "INDIRECT_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INDIRECT_EUR_TN"
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_CHAR_",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INTERNAL_BENCHMARK_PRICE_CHAR_"
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_NUM_",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INTERNAL_BENCHMARK_PRICE_NUM_"
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_ORDE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INTERNAL_BENCHMARK_PRICE_ORDE"
+    }, {
+      "name" : "INVOICE_DATE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INVOICE_DATE"
+    }, {
+      "name" : "INVOICE_MILK_COST_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INVOICE_MILK_COST_EUR"
+    }, {
+      "name" : "INVOICE_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INVOICE_NUMBER"
+    }, {
+      "name" : "INVOICE_VALUE_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.INVOICE_VALUE_EUR"
+    }, {
+      "name" : "ITEM_DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ITEM_DESCRIPTION"
+    }, {
+      "name" : "ITEM_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ITEM_NUMBER"
+    }, {
+      "name" : "KOSHERING_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.KOSHERING_EUR"
+    }, {
+      "name" : "KOSHERING_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.KOSHERING_EUR_TN"
+    }, {
+      "name" : "LETTERS_CREDIT_FACT_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LETTERS_CREDIT_FACT_EUR_TN"
+    }, {
+      "name" : "LETTERS_OF_CREDIT_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LETTERS_OF_CREDIT_EUR"
+    }, {
+      "name" : "LEVEL_1",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LEVEL_1"
+    }, {
+      "name" : "LEVEL_2",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LEVEL_2"
+    }, {
+      "name" : "LEVEL_3",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LEVEL_3"
+    }, {
+      "name" : "LEVEL_4",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LEVEL_4"
+    }, {
+      "name" : "LOOSE_LOADING_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LOOSE_LOADING_EUR"
+    }, {
+      "name" : "LOOSE_LOADING_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.LOOSE_LOADING_EUR_TN"
+    }, {
+      "name" : "MARGINAL_CONTN_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MARGINAL_CONTN_TOTAL"
+    }, {
+      "name" : "MARGINAL_CONTR_PER_TON_AFTER_M",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MARGINAL_CONTR_PER_TON_AFTER_M"
+    }, {
+      "name" : "MATURATION_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MATURATION_EUR"
+    }, {
+      "name" : "MATURATION_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MATURATION_EUR_TN"
+    }, {
+      "name" : "MILK_SOLIDS_COST",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MILK_SOLIDS_COST"
+    }, {
+      "name" : "MILK_SOLIDS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MILK_SOLIDS_EUR"
+    }, {
+      "name" : "MILK_SOLIDS_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MILK_SOLIDS_EUR_TN"
+    }, {
+      "name" : "MOISTURE_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MOISTURE_EUR"
+    }, {
+      "name" : "MOISTURE_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.MOISTURE_EUR_TN"
+    }, {
+      "name" : "NET_CONTRIBUTION_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_CONTRIBUTION_EUR"
+    }, {
+      "name" : "NET_CONTRIBUTION_PER_TON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_CONTRIBUTION_PER_TON"
+    }, {
+      "name" : "NET_RETURN_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_RETURN_EUR"
+    }, {
+      "name" : "NET_RETURN_EUR_PER_TON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_RETURN_EUR_PER_TON"
+    }, {
+      "name" : "NET_SALES_RETURN_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_SALES_RETURN_EUR"
+    }, {
+      "name" : "NET_SELLING_PRICE_EUR_PER_TON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_SELLING_PRICE_EUR_PER_TON"
+    }, {
+      "name" : "NET_SELLING_PRICE_VS_BENCHMARK",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NET_SELLING_PRICE_VS_BENCHMARK"
+    }, {
+      "name" : "NONPREM_DISCOUNT_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NONPREM_DISCOUNT_DESC"
+    }, {
+      "name" : "NONPREM_DISCOUNT_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NONPREM_DISCOUNT_EUR_TN"
+    }, {
+      "name" : "NORMAL_STORAGE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.NORMAL_STORAGE"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_ADJUSTED",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_ADJUSTED"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_EXTERNAL"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL2",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_EXTERNAL2"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL_",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_EXTERNAL_"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNA_1",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_EXTERNA_1"
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNA_2",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.OPPORTUNITY_COST_EUR_EXTERNA_2"
+    }, {
+      "name" : "ORDERED_DATE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ORDERED_DATE"
+    }, {
+      "name" : "ORGANISATION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ORGANISATION_NAME"
+    }, {
+      "name" : "ORNUA_REALISATIONS_BONUS",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.ORNUA_REALISATIONS_BONUS"
+    }, {
+      "name" : "PALLETIZING_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.PALLETIZING_EUR"
+    }, {
+      "name" : "PRODUCT_CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.PRODUCT_CATEGORY"
+    }, {
+      "name" : "PRODUCT_MODIFIERS_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.PRODUCT_MODIFIERS_TOTAL_EUR"
+    }, {
+      "name" : "PRODUCT_TESTING_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.PRODUCT_TESTING_EUR"
+    }, {
+      "name" : "PRODUCT_TESTING_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.PRODUCT_TESTING_EUR_TN"
+    }, {
+      "name" : "REALISATIONS_AND_BONUS_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.REALISATIONS_AND_BONUS_EUR_TN"
+    }, {
+      "name" : "REBATES_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.REBATES_EUR"
+    }, {
+      "name" : "REBATE_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.REBATE_EUR_TN"
+    }, {
+      "name" : "RFT_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.RFT_EUR"
+    }, {
+      "name" : "RFT_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.RFT_EUR_TN"
+    }, {
+      "name" : "RITTER_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.RITTER_EUR"
+    }, {
+      "name" : "RITTER_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.RITTER_EUR_TN"
+    }, {
+      "name" : "SALES_CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SALES_CATEGORY"
+    }, {
+      "name" : "SALES_PERSON",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SALES_PERSON"
+    }, {
+      "name" : "SALES_PRODUCT_GROUP",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SALES_PRODUCT_GROUP"
+    }, {
+      "name" : "SHIPPED_QTY_TNS",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SHIPPED_QTY_TNS"
+    }, {
+      "name" : "SPECIALISED_PALLETS_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SPECIALISED_PALLETS_EUR"
+    }, {
+      "name" : "SPECIALIZED_PALLETS_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SPECIALIZED_PALLETS_EUR_TN"
+    }, {
+      "name" : "SPG_CODE",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SPG_CODE"
+    }, {
+      "name" : "SPG_PARENT",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.SPG_PARENT"
+    }, {
+      "name" : "STORAGE_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.STORAGE_EUR"
+    }, {
+      "name" : "STRATEGIC_RATING",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.STRATEGIC_RATING"
+    }, {
+      "name" : "THROUGHPUT_ABSORPTION_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.THROUGHPUT_ABSORPTION_EUR"
+    }, {
+      "name" : "THROUGHPUT_ABSORP_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.THROUGHPUT_ABSORP_EUR_TN"
+    }, {
+      "name" : "TRANSPORT_TOTAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.TRANSPORT_TOTAL_EUR"
+    }, {
+      "name" : "WORKING_CAPITAL_EUR",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.WORKING_CAPITAL_EUR"
+    }, {
+      "name" : "WORKING_CAPITAL_EUR_TN",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.WORKING_CAPITAL_EUR_TN"
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.YEAR_END_ADJUSTMENT"
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT_2",
+      "sourceLogicalColumn" : "logicalColumn:BM5.9 - Other Measures.YEAR_END_ADJUSTMENT_2"
+    } ]
+  }
+}

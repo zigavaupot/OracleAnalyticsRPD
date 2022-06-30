@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "CurrentYear",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select '2013' from dual"
+    } ],
+    "variables" : [ {
+      "name" : "CurrentYear",
+      "description" : "RAAS_",
+      "value" : "''",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

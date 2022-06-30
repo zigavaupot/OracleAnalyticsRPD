@@ -1,0 +1,167 @@
+{
+  "logicalTable" : {
+    "name" : "Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Cust Number" ],
+    "logicalColumns" : [ {
+      "name" : "Cust Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_BIRTH_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Credit Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_CRDT_RATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_GENDER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_MARITAL_STATUS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Number",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Cust Segment",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_SEGMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB13.CAT13.SCH13.D_CUSTOMERS.CUST_TYPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cust Age",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  CURRENT_TIMESTAMP(0))",
+          "expressionObjects" : [ "logicalColumn:BM13.Customers.Cust Birth Date" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_CUSTOMERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB13.CAT13.SCH13.D_CUSTOMERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Cust Number" ],
+        "displayKey" : "Cust Number",
+        "chronologicalKey" : [ "Cust Number" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Customers",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

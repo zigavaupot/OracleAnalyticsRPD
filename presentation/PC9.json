@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "PC9",
+    "sourceBusinessModel" : "businessModel:BM9",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC9.Customers"
+    }, {
+      "name" : "presentationTable:PC9.Geography"
+    }, {
+      "name" : "presentationTable:PC9.Orders"
+    }, {
+      "name" : "presentationTable:PC9.Time"
+    }, {
+      "name" : "presentationTable:PC9.Paid Metrics"
+    }, {
+      "name" : "presentationTable:PC9.Revenue metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC9",
+      "nameVariable" : "OATBOOTCAMP MC"
+    }
+  }
+}

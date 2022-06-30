@@ -1,0 +1,273 @@
+{
+  "logicalTable" : {
+    "name" : "Products",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Item Number" ],
+    "logicalColumns" : [ {
+      "name" : "Downgrade Flag",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.DOWNGRADE_FLAG" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Downgrade Flag"
+    }, {
+      "name" : "Item Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_DESCRIPTION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product Item"
+    }, {
+      "name" : "Item Number",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product Item"
+    }, {
+      "name" : "Level 1",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.LEVEL_1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Level 1"
+    }, {
+      "name" : "Level 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.LEVEL_2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Level 2"
+    }, {
+      "name" : "Level 3",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.LEVEL_3" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Level 3"
+    }, {
+      "name" : "Level 4",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.LEVEL_4" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Level 4"
+    }, {
+      "name" : "Product Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.PRODUCT_CATEGORY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SPG Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.SPG_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Product Group"
+    }, {
+      "name" : "SPG Parent",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.SPG_PARENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "SPG Parent"
+    }, {
+      "name" : "Sales Product Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_PRODUCTS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.SALES_PRODUCT_GROUP" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Product Group"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_PRODUCTS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB5.CAT5.SCH5.D_PRODUCTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Products",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Products",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Level 1",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Level 1" ],
+        "displayKey" : "Level 1",
+        "chronologicalKey" : [ "Level 1" ]
+      }, {
+        "name" : "Level 2",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Level 2" ],
+        "displayKey" : "Level 2",
+        "chronologicalKey" : [ "Level 2" ]
+      }, {
+        "name" : "Level 3",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Level 3" ],
+        "displayKey" : "Level 3",
+        "chronologicalKey" : [ "Level 3" ]
+      }, {
+        "name" : "Level 4",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Level 4" ],
+        "displayKey" : "Level 4",
+        "chronologicalKey" : [ "Level 4" ]
+      }, {
+        "name" : "Product Item",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Item Number" ],
+        "displayKey" : "Item Description",
+        "additionalKeys" : [ [ "Item Description", "Item Number" ] ],
+        "chronologicalKey" : [ "Item Number" ]
+      }, {
+        "name" : "SPG Parent",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "SPG Parent" ],
+        "displayKey" : "SPG Parent",
+        "chronologicalKey" : [ "SPG Parent" ]
+      }, {
+        "name" : "Sales Product Group",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Sales Product Group" ],
+        "displayKey" : "SPG Code",
+        "additionalKeys" : [ [ "SPG Code", "Sales Product Group" ] ],
+        "chronologicalKey" : [ "Sales Product Group" ]
+      }, {
+        "name" : "Downgrade Flag",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Downgrade Flag" ],
+        "displayKey" : "Downgrade Flag",
+        "chronologicalKey" : [ "Downgrade Flag" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Products [branch at level 'Level 4']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Products", "Level 1", "Level 2", "Level 3", "Level 4", "Product Item" ]
+      }, {
+        "name" : "Products [branch at level 'Sales Product Group']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Products", "SPG Parent", "Sales Product Group", "Product Item" ]
+      }, {
+        "name" : "Products [branch at level 'Downgrade Flag']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Products", "Downgrade Flag", "Product Item" ]
+      } ]
+    }
+  }
+}

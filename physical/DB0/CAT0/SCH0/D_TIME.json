@@ -1,0 +1,252 @@
+{
+  "physicalTable" : {
+    "name" : "D_TIME",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CAL_HALF",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_MONTH",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_MONTH_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_QTR",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_QTR_END_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_QTR_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_QTR_START_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_TRIMESTER",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_WEEK",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_WEEK_END_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_WEEK_START_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR_END_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR_END_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR_START_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR_START_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY_OF_MONTH",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY_OF_WEEK",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY_OF_YEAR",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DAY_TS",
+      "dataType" : "TIMESTAMP",
+      "length" : 11,
+      "nullable" : true
+    }, {
+      "name" : "W_DAY_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "FST_DAY_CAL_MNTH_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "FST_DAY_CAL_QTR_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "FST_DAY_CAL_WK_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "FST_DAY_CAL_YEAR_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_HALF",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_DAY_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_MONTH_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_QTR_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_TER_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_WEEK_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JULIAN_YEAR_NUM",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LAST_DAY_CAL_MNTH_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "LAST_DAY_CAL_QTR_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "LAST_DAY_CAL_WK_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "LAST_DAY_CAL_YEAR_FLG",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "M_END_CAL_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "M_STRT_CAL_DT_KEY",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_MONTH",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_OFFSET_WK",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_TER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_QTR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "W_MONTH_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_WEEK",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_YEAR",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "DAY_DT" ], [ "DAY_DT" ], [ "DAY_DT" ], [ "DAY_DT" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

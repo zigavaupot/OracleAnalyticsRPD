@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "Sales",
+    "presentationColumns" : [ {
+      "name" : "# of Channels",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.# of Channels"
+    }, {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.# of Customers"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.# of Products"
+    }, {
+      "name" : "# of Promotions",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.# of Promotions"
+    }, {
+      "name" : "Sales Growth Month-over-Month",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Growth Month-over-Month"
+    }, {
+      "name" : "Sales Growth YoY",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Growth YoY"
+    }, {
+      "name" : "Sales Quantity",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Quantity"
+    }, {
+      "name" : "Sales Value",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Value"
+    }, {
+      "name" : "Sales Value LY",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Value LY"
+    }, {
+      "name" : "Sales Value Last Month",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Value Last Month"
+    }, {
+      "name" : "Sales Value YTD",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.Sales Value YTD"
+    }, {
+      "name" : "TIME_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Sales.TIME_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

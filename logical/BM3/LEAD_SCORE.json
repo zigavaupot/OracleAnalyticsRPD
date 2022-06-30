@@ -1,0 +1,560 @@
+{
+  "logicalTable" : {
+    "name" : "LEAD_SCORE",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "ASYMMETRIQUE_ACTIVITY_INDEX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.ASYMMETRIQUE_ACTIVITY_INDEX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_ACTIVITY_SCORE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.ASYMMETRIQUE_ACTIVITY_SCORE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_INDEX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.ASYMMETRIQUE_PROFILE_INDEX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_SCORE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.ASYMMETRIQUE_PROFILE_SCORE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "A_FREE_COPY_OF_MASTERING_THE_I",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.A_FREE_COPY_OF_MASTERING_THE_I" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CONVERTED",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.CONVERTED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.COUNTRY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DIGITAL_ADVERTISEMENT",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.DIGITAL_ADVERTISEMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DO_NOT_CALL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.DO_NOT_CALL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DO_NOT_EMAIL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.DO_NOT_EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "GET_UPDATES_ON_DM_CONTENT",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.GET_UPDATES_ON_DM_CONTENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "HOW_DID_YOU_HEAR_ABOUT_X_EDUCA",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.HOW_DID_YOU_HEAR_ABOUT_X_EDUCA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "I_AGREE_TO_PAY_THE_AMOUNT_THRO",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.I_AGREE_TO_PAY_THE_AMOUNT_THRO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LAST_ACTIVITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LAST_ACTIVITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LAST_NOTABLE_ACTIVITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LAST_NOTABLE_ACTIVITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LEAD_ORIGIN",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LEAD_ORIGIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LEAD_PROFILE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LEAD_PROFILE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LEAD_QUALITY",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LEAD_QUALITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LEAD_SOURCE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LEAD_SOURCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MAGAZINE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.MAGAZINE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NEWSPAPER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.NEWSPAPER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NEWSPAPER_ARTICLE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.NEWSPAPER_ARTICLE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Number of Leads",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.LEAD_NUMBER" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Views",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.PAGE_VIEWS_PER_VISIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Prospects",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.PROSPECT_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "RECEIVE_MORE_UPDATES_ABOUT_OUR",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.RECEIVE_MORE_UPDATES_ABOUT_OUR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SEARCH",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.SEARCH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SPECIALIZATION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.SPECIALIZATION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TAGS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.TAGS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "THROUGH_RECOMMENDATIONS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.THROUGH_RECOMMENDATIONS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UPDATE_ME_ON_SUPPLY_CHAIN_CONT",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.UPDATE_ME_ON_SUPPLY_CHAIN_CONT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Duration",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.TOTAL_TIME_SPENT_ON_WEBSITE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Visits",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.TOTAL_VISITS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "WHAT_IS_YOUR_CURRENT_OCCUPATIO",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.WHAT_IS_YOUR_CURRENT_OCCUPATIO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WHAT_MATTERS_MOST_TO_YOU_IN_CH",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.WHAT_MATTERS_MOST_TO_YOU_IN_CH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "X_EDUCATION_FORUMS",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LEAD_SCORE_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB3.CAT3.SCH3.LEAD_SCORE.X_EDUCATION_FORUMS" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LEAD_SCORE_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB3.CAT3.SCH3.LEAD_SCORE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM3.LEAD_SCORE_VW",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

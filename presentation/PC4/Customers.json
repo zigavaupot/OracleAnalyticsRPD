@@ -1,0 +1,80 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Customer Age",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Age"
+    }, {
+      "name" : "Customer Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Birth Date"
+    }, {
+      "name" : "Customer Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Credit Rate"
+    }, {
+      "name" : "Customer Gender",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Gender"
+    }, {
+      "name" : "Customer Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Marital Status"
+    }, {
+      "name" : "Customer Name",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Name"
+    }, {
+      "name" : "Customer Number",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Number"
+    }, {
+      "name" : "Customer Segment",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Segment"
+    }, {
+      "name" : "Customer Type",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Customers.Customer Type"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Customer Gender Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM4.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.All Customers"
+      }, {
+        "name" : "Customer Gender",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer Gender",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Gender"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Name"
+      } ]
+    }, {
+      "name" : "Customer Segments Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM4.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.All Customers"
+      }, {
+        "name" : "Customer Segment",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer Segment",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Segment"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Name"
+      } ]
+    }, {
+      "name" : "Customer Marital Status Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM4.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.All Customers"
+      }, {
+        "name" : "Customer Marital Status",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer Marital Status",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Marital Status"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC4.Customers.Customer Name"
+      } ]
+    } ]
+  }
+}

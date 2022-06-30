@@ -1,0 +1,67 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "presentationColumns" : [ {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Address 1"
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Address 2"
+    }, {
+      "name" : "Address key",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Address key"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Area"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.City"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Country"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Country Code"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Longitude"
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Postal Code"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.Region"
+    }, {
+      "name" : "State - Province",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Geography.State - Province"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM9.Geography",
+      "levels" : [ {
+        "name" : "All regions",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Geography.All regions"
+      }, {
+        "name" : "COUNTRY_CODE",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Geography.COUNTRY_CODE",
+        "displayColumn" : "presentationColumn:PC9.Geography.Country Code"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Geography.Region",
+        "displayColumn" : "presentationColumn:PC9.Geography.Region"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Geography.City",
+        "displayColumn" : "presentationColumn:PC9.Geography.City"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Geography.Detail",
+        "displayColumn" : "presentationColumn:PC9.Geography.Address key"
+      } ]
+    } ]
+  }
+}

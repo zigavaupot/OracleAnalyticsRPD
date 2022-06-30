@@ -1,0 +1,93 @@
+{
+  "physicalTable" : {
+    "name" : "DM$VAAR_CARBO_TRANS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANTECEDENT_PREDICATE",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    }, {
+      "name" : "ANTECEDENT_SUPPORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CONSEQUENT_PREDICATE",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    }, {
+      "name" : "CONSEQUENT_SUPPORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_ITEMS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PARTITION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "RULE_CONFIDENCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RULE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RULE_ITEMSET_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RULE_LIFT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RULE_REVCONFIDENCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RULE_SUPPORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO Itemsets",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.DM$VAAR_CARBO_TRANS.RULE_ITEMSET_ID",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO Itemsets.ITEMSET_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.DM$VAAR_CARBO_TRANS.ANTECEDENT_PREDICATE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.ANTECEDENT_CONSEQUENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.DM$VAAR_CARBO_TRANS.CONSEQUENT_PREDICATE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.ANTECEDENT_CONSEQUENT"
+      } ]
+    } ]
+  }
+}

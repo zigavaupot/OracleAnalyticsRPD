@@ -1,0 +1,58 @@
+{
+  "logicalTable" : {
+    "name" : "Invoices",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Invoice Number" ],
+    "logicalColumns" : [ {
+      "name" : "Invoice Number",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_INVOICES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_INVOICES.INVOICE_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Invoice"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_INVOICES_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB5.CAT5.SCH5.D_INVOICES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Invoices",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Invoices",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Invoice",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Invoice Number" ],
+        "displayKey" : "Invoice Number",
+        "chronologicalKey" : [ "Invoice Number" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Invoices",
+        "description" : "default hierarchy",
+        "levels" : [ "All Invoices", "Invoice" ]
+      } ]
+    }
+  }
+}

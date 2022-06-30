@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "DUMMY_TABLE_DIM",
+    "presentationColumns" : [ {
+      "name" : "DUMMY_COLUMN",
+      "sourceLogicalColumn" : "logicalColumn:DUMMY.DUMMY_TABLE_DIM.DUMMY_COLUMN"
+    }, {
+      "name" : "DUMMY_COLUMN2",
+      "sourceLogicalColumn" : "logicalColumn:DUMMY.DUMMY_TABLE_DIM.DUMMY_COLUMN2"
+    } ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "presentationTable" : {
+    "name" : "LEAD_SCORE_VW",
+    "presentationColumns" : [ {
+      "name" : "ASYMMETRIQUE_ACTIVITY_INDEX",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.ASYMMETRIQUE_ACTIVITY_INDEX",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_ACTIVITY_SCORE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.ASYMMETRIQUE_ACTIVITY_SCORE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_INDEX",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.ASYMMETRIQUE_PROFILE_INDEX",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_SCORE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.ASYMMETRIQUE_PROFILE_SCORE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "A_FREE_COPY_OF_MASTERING_THE_I",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.A_FREE_COPY_OF_MASTERING_THE_I"
+    }, {
+      "name" : "CITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.CITY"
+    }, {
+      "name" : "CONVERTED",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.CONVERTED"
+    }, {
+      "name" : "COUNTRY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.COUNTRY"
+    }, {
+      "name" : "DIGITAL_ADVERTISEMENT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.DIGITAL_ADVERTISEMENT"
+    }, {
+      "name" : "DO_NOT_CALL",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.DO_NOT_CALL"
+    }, {
+      "name" : "DO_NOT_EMAIL",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.DO_NOT_EMAIL"
+    }, {
+      "name" : "GET_UPDATES_ON_DM_CONTENT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.GET_UPDATES_ON_DM_CONTENT"
+    }, {
+      "name" : "HOW_DID_YOU_HEAR_ABOUT_X_EDUCA",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.HOW_DID_YOU_HEAR_ABOUT_X_EDUCA"
+    }, {
+      "name" : "I_AGREE_TO_PAY_THE_AMOUNT_THRO",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.I_AGREE_TO_PAY_THE_AMOUNT_THRO"
+    }, {
+      "name" : "LAST_ACTIVITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.LAST_ACTIVITY"
+    }, {
+      "name" : "LAST_NOTABLE_ACTIVITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.LAST_NOTABLE_ACTIVITY"
+    }, {
+      "name" : "LEAD_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.LEAD_NUMBER"
+    }, {
+      "name" : "MAGAZINE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.MAGAZINE"
+    }, {
+      "name" : "NEWSPAPER",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.NEWSPAPER"
+    }, {
+      "name" : "NEWSPAPER_ARTICLE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.NEWSPAPER_ARTICLE"
+    }, {
+      "name" : "ORIGIN",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.ORIGIN"
+    }, {
+      "name" : "PAGE_VIEWS_PER_VISIT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.PAGE_VIEWS_PER_VISIT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROFILE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.PROFILE"
+    }, {
+      "name" : "PROSPECT_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.PROSPECT_ID"
+    }, {
+      "name" : "QUALITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.QUALITY"
+    }, {
+      "name" : "RECEIVE_MORE_UPDATES_ABOUT_OUR",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.RECEIVE_MORE_UPDATES_ABOUT_OUR"
+    }, {
+      "name" : "SEARCH",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.SEARCH"
+    }, {
+      "name" : "SOURCE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.SOURCE"
+    }, {
+      "name" : "SPECIALIZATION",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.SPECIALIZATION"
+    }, {
+      "name" : "TAGS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.TAGS"
+    }, {
+      "name" : "THROUGH_RECOMMENDATIONS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.THROUGH_RECOMMENDATIONS"
+    }, {
+      "name" : "TOTAL_TIME_SPENT_ON_WEBSITE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.TOTAL_TIME_SPENT_ON_WEBSITE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TOTAL_VISITS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.TOTAL_VISITS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UPDATE_ME_ON_SUPPLY_CHAIN_CONT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.UPDATE_ME_ON_SUPPLY_CHAIN_CONT"
+    }, {
+      "name" : "WHAT_IS_YOUR_CURRENT_OCCUPATIO",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.WHAT_IS_YOUR_CURRENT_OCCUPATIO"
+    }, {
+      "name" : "WHAT_MATTERS_MOST_TO_YOU_IN_CH",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.WHAT_MATTERS_MOST_TO_YOU_IN_CH"
+    }, {
+      "name" : "X_EDUCATION_FORUMS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE_VW.X_EDUCATION_FORUMS"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM3.LEAD_SCORE_VW",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM3.LEAD_SCORE_VW.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM3.LEAD_SCORE_VW.Detail",
+        "displayColumn" : "presentationColumn:PC3.LEAD_SCORE_VW.LEAD_NUMBER"
+      } ]
+    } ]
+  }
+}

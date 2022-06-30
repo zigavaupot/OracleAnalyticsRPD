@@ -1,0 +1,22 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Households",
+    "presentationColumns" : [ {
+      "name" : "Household ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Households.Household ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.CARBO Households",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Households.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM6.CARBO Households.Detail",
+        "displayColumn" : "presentationColumn:PC6.CARBO Households.Household ID"
+      } ]
+    } ]
+  }
+}

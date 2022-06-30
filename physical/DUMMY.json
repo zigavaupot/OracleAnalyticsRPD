@@ -1,0 +1,51 @@
+{
+  "database" : {
+    "name" : "DUMMY",
+    "databaseType" : "ORACLE_DATABASE",
+    "connectionPools" : [ {
+      "name" : "DUMMY_CP",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10485760,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "featureOverrides" : [ {
+      "name" : "RAND_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "EHCC_SUPPORTED",
+      "value" : true
+    }, {
+      "name" : "PERF_PREFER_COMPRESSION",
+      "value" : true
+    }, {
+      "name" : "LISTAGG_BASIC_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "EXTRACT_REGEX_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "REGEX_REPLACE_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "FRACTIONAL_SECOND_PRECISION",
+      "value" : 0
+    }, {
+      "name" : "MAX_BULK_FETCH_BUFFER_SIZE",
+      "value" : 327680
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false
+  }
+}

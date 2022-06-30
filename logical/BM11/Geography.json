@@ -1,0 +1,212 @@
+{
+  "logicalTable" : {
+    "name" : "Geography",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Address Key" ],
+    "logicalColumns" : [ {
+      "name" : "Address 1",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.ADDRESS1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Address 2",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.ADDRESS2" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Address Key",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.ADDR_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.AREA" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Country Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.COUNTRY_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Country Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.COUNTRY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Latitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.LATITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Longitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.LONGITUDE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Postal Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.POSTAL_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RegionREGION",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.REGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State prov",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_GEOGRAPHY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB11.CAT11.SCH11.D_GEOGRAPHY.STATE_PROV" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_GEOGRAPHY_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB11.CAT11.SCH11.D_GEOGRAPHY" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Address Key" ],
+        "displayKey" : "Address Key",
+        "chronologicalKey" : [ "Address Key" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Geography",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

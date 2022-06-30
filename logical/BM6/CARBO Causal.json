@@ -1,0 +1,132 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Causal",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Store", "UPC", "Week", "Geography" ],
+    "logicalColumns" : [ {
+      "name" : "Display",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.DISPLAY_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Feature",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.FEATURE_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Geography",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.GEOGRAPHY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Store",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.STORE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.UPC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Week",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_CAUSAL_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.WEEK" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CARBO_CAUSAL_LOOKUP_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Geography", "Store", "UPC", "Week" ],
+        "displayKey" : "Geography",
+        "additionalKeys" : [ [ "Geography" ] ],
+        "chronologicalKey" : [ "Geography", "Store", "UPC", "Week" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Causal",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

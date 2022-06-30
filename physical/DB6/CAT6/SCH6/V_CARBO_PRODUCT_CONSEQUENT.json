@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "V_CARBO_PRODUCT_CONSEQUENT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ANTECEDENT_CONSEQUENT",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    }, {
+      "name" : "BRAND",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "COMMODITY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_SIZE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ANTECEDENT_CONSEQUENT" ], [ "UPC" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO_PRODUCT_LOOKUP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BRAND",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "COMMODITY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_SIZE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ANTECEDENT_CONSEQUENT",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "UPC" ], [ "ANTECEDENT_CONSEQUENT" ], [ "ANTECEDENT_CONSEQUENT" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

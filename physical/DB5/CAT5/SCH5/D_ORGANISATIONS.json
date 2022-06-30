@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "D_ORGANISATIONS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ORGANISATION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ORGANISATION_NAME" ], [ "ORGANISATION_NAME" ], [ "ORGANISATION_NAME" ], [ "ORGANISATION_NAME" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

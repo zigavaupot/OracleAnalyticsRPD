@@ -1,0 +1,53 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.Brand"
+    }, {
+      "name" : "LOB",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.LOB"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.Product"
+    }, {
+      "name" : "Product Item",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.Product Item"
+    }, {
+      "name" : "Product Item ID",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.Product Item ID"
+    }, {
+      "name" : "Product Type",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Products.Product Type"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Product Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM0.Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.All Products"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.Brand",
+        "displayColumn" : "presentationColumn:PC00.Products.Brand"
+      }, {
+        "name" : "LOB",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.LOB",
+        "displayColumn" : "presentationColumn:PC00.Products.LOB"
+      }, {
+        "name" : "Product Type",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.Product Type",
+        "displayColumn" : "presentationColumn:PC00.Products.Product Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.Product",
+        "displayColumn" : "presentationColumn:PC00.Products.Product"
+      }, {
+        "name" : "Product Item",
+        "sourceLogicalLevel" : "logicalLevel:BM0.Products.Product Item",
+        "displayColumn" : "presentationColumn:PC00.Products.Product Item"
+      } ]
+    } ]
+  }
+}

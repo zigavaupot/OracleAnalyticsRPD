@@ -1,0 +1,759 @@
+{
+  "logicalTable" : {
+    "name" : "Time - Invoice",
+    "description" : "Time Dimension",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Date" ],
+    "logicalColumns" : [ {
+      "name" : "Calendar Half Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_HALF" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Month Code",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Month Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_MONTH_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Quarter",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_QTR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Quarter End Date",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_QTR_END_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Quarter Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_QTR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Quarter Start Date",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_QTR_START_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Trimester",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_TRIMESTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Week",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Week End Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_WEEK_END_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Week Start Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_WEEK_START_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year End Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR_END_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year End Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR_END_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year Start Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR_START_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Year Start Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.CAL_YEAR_START_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Day"
+    }, {
+      "name" : "Date ID",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DATE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date Timestamp",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_TS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.W_DAY_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Of Month",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_OF_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Of Week",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_OF_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Of Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_OF_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "End Calendar Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.M_END_CAL_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Enterprise Half Year",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_HALF" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Enterprise Half Year"
+    }, {
+      "name" : "First Day of Calendar Month Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.FST_DAY_CAL_MNTH_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "First Day of Calendar Quarter Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.FST_DAY_CAL_QTR_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "First Day of Calendar Week Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.FST_DAY_CAL_WK_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "First Day of Calendar Year Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.FST_DAY_CAL_YEAR_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Day Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_DAY_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Month Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_MONTH_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Quarter Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_QTR_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Trimester Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_TER_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Week Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_WEEK_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Julian Year Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.JULIAN_YEAR_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Day of Calendar Month Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.LAST_DAY_CAL_MNTH_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Day of Calendar Quarter Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.LAST_DAY_CAL_QTR_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Day of Calendar Week Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.LAST_DAY_CAL_WK_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Day of Calendar Year Flag",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.LAST_DAY_CAL_YEAR_FLG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Month",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_MONTH" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month"
+    }, {
+      "name" : "Month Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.W_MONTH_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_QTR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter"
+    }, {
+      "name" : "Start Calendar Date Id",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.M_STRT_CAL_DT_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Trimester",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_TER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Week",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_WEEK" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Week"
+    }, {
+      "name" : "Week By Year",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_OFFSET_WK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Year",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_TIME_INV_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.PER_NAME_YEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_TIME_INV_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB5.CAT5.SCH5.D_TIME_INV" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "TIME",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Year",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Year" ],
+        "displayKey" : "Year",
+        "chronologicalKey" : [ "Year" ]
+      }, {
+        "name" : "Enterprise Half Year",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Enterprise Half Year" ],
+        "displayKey" : "Enterprise Half Year",
+        "chronologicalKey" : [ "Enterprise Half Year" ]
+      }, {
+        "name" : "Quarter",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Quarter" ],
+        "displayKey" : "Quarter",
+        "chronologicalKey" : [ "Quarter" ]
+      }, {
+        "name" : "Month",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Month" ],
+        "displayKey" : "Month",
+        "chronologicalKey" : [ "Month" ]
+      }, {
+        "name" : "Week",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Week" ],
+        "displayKey" : "Week",
+        "chronologicalKey" : [ "Week" ]
+      }, {
+        "name" : "Day",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Date" ],
+        "displayKey" : "Date",
+        "chronologicalKey" : [ "Date" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Time - Invoice [branch at level 'Week']",
+        "levels" : [ "Total", "Year", "Enterprise Half Year", "Quarter", "Month", "Week", "Day" ]
+      } ]
+    }
+  }
+}

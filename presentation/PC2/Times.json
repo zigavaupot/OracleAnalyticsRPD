@@ -1,0 +1,252 @@
+{
+  "presentationTable" : {
+    "name" : "Times",
+    "presentationColumns" : [ {
+      "name" : "CALENDAR_MONTH_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_MONTH_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CALENDAR_MONTH_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_MONTH_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CALENDAR_QUARTER_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_QUARTER_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CALENDAR_QUARTER_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_QUARTER_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CALENDAR_WEEK_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_WEEK_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CALENDAR_YEAR_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.CALENDAR_YEAR_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Month",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Calendar Month"
+    }, {
+      "name" : "Calendar Month Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Calendar Month Description"
+    }, {
+      "name" : "Calendar Quarter Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Calendar Quarter Description"
+    }, {
+      "name" : "Calendar Year",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Calendar Year"
+    }, {
+      "name" : "DAYS_IN_CAL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_CAL_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAYS_IN_CAL_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_CAL_QUARTER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAYS_IN_CAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_CAL_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_FIS_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_FIS_QUARTER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAYS_IN_FIS_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_NUMBER_IN_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAY_NUMBER_IN_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_NUMBER_IN_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.DAY_NUMBER_IN_WEEK",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Date"
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Day"
+    }, {
+      "name" : "END_OF_CAL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_CAL_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "END_OF_CAL_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_CAL_QUARTER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "END_OF_CAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_CAL_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "END_OF_FIS_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_FIS_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "END_OF_FIS_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_FIS_QUARTER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "END_OF_FIS_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.END_OF_FIS_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_MONTH_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.FISCAL_MONTH_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_MONTH_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.FISCAL_MONTH_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_QUARTER_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.FISCAL_QUARTER_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_QUARTER_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.FISCAL_QUARTER_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FISCAL_YEAR_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.FISCAL_YEAR_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fiscal Month",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Fiscal Month"
+    }, {
+      "name" : "Fiscal Month Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Fiscal Month Description"
+    }, {
+      "name" : "Fiscal Quarter Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Fiscal Quarter Description"
+    }, {
+      "name" : "Fiscal Week Number",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Fiscal Week Number"
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.Fiscal Year"
+    }, {
+      "name" : "WEEK_ENDING_DAY",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.WEEK_ENDING_DAY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "WEEK_ENDING_DAY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Times.WEEK_ENDING_DAY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Calendar Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Times",
+      "levels" : [ {
+        "name" : "All Times",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.All Times"
+      }, {
+        "name" : "Calendar Year",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Calendar Year",
+        "displayColumn" : "presentationColumn:PC2.Times.Calendar Year"
+      }, {
+        "name" : "Calendar Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Calendar Quarter",
+        "displayColumn" : "presentationColumn:PC2.Times.Calendar Quarter Description"
+      }, {
+        "name" : "Calendar Month",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Calendar Month",
+        "displayColumn" : "presentationColumn:PC2.Times.Calendar Month Description"
+      }, {
+        "name" : "Date",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Date",
+        "displayColumn" : "presentationColumn:PC2.Times.Date"
+      } ]
+    }, {
+      "name" : "Fiscal Calendar Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Times",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      },
+      "levels" : [ {
+        "name" : "All Times",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.All Times"
+      }, {
+        "name" : "Fiscal Year",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Fiscal Year",
+        "displayColumn" : "presentationColumn:PC2.Times.Fiscal Year"
+      }, {
+        "name" : "Fiscal Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Fiscal Quarter",
+        "displayColumn" : "presentationColumn:PC2.Times.Fiscal Quarter Description"
+      }, {
+        "name" : "Fiscal Month",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Fiscal Month",
+        "displayColumn" : "presentationColumn:PC2.Times.Fiscal Month Description"
+      }, {
+        "name" : "Date",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Times.Date",
+        "displayColumn" : "presentationColumn:PC2.Times.Date"
+      } ]
+    } ]
+  }
+}

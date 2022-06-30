@@ -1,0 +1,60 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.# of Products"
+    }, {
+      "name" : "% of Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.% of Full Company Revenue"
+    }, {
+      "name" : "% of Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.% of Full Quarter Revenue"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Order Size",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Avg Order Size"
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Discount Value"
+    }, {
+      "name" : "Fixed Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Fixed Costs"
+    }, {
+      "name" : "Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Full Company Revenue"
+    }, {
+      "name" : "Full Quarter Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Full Quarter Revenue"
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Revenue"
+    }, {
+      "name" : "Revenue (Region)",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Revenue (Region)"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Units"
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Revenue Metrics.Variable Costs"
+    } ]
+  }
+}

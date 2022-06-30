@@ -1,0 +1,130 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Products - Consequent",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Consequent" ],
+    "logicalColumns" : [ {
+      "name" : "Consequent",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.ANTECEDENT_CONSEQUENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    }, {
+      "name" : "Consequent Brand",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.BRAND" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Consequent Commodity",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.COMMODITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Consequent Product",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.PRODUCT_DESCRIPTION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Consequent Product Size",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.PRODUCT_SIZE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Consequent UPC",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.UPC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "V_CARBO_PRODUCT_CONSEQUENT_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Consequent UPC" ],
+        "displayKey" : "Consequent",
+        "additionalKeys" : [ [ "Consequent" ] ],
+        "chronologicalKey" : [ "Consequent UPC" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Products - Consequent",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Detail" ]
+      } ]
+    }
+  }
+}

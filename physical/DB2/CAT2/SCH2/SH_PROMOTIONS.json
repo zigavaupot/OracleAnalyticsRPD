@@ -1,0 +1,67 @@
+{
+  "physicalTable" : {
+    "name" : "SH_PROMOTIONS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PROMO_CATEGORY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "INT",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_SUBCATEGORY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_TOTAL",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_BEGIN_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_COST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_END_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_SUBCATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "PROMO_ID" ], [ "PROMO_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

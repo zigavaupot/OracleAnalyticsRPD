@@ -1,0 +1,14 @@
+{
+  "subjectArea" : {
+    "name" : "DUMMY",
+    "sourceBusinessModel" : "businessModel:DUMMY",
+    "hideIfTrue" : {
+      "expressionTemplate" : "1"
+    },
+    "tableOrder" : [ {
+      "name" : "presentationTable:DUMMY.DUMMY_TABLE_DIM"
+    }, {
+      "name" : "presentationTable:DUMMY.DUMMY_TABLE_FACT"
+    } ]
+  }
+}

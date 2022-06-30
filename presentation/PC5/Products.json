@@ -1,0 +1,102 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "Downgrade Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Downgrade Flag"
+    }, {
+      "name" : "Item Description",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Item Description"
+    }, {
+      "name" : "Item Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Item Number"
+    }, {
+      "name" : "Level 1",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Level 1"
+    }, {
+      "name" : "Level 2",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Level 2"
+    }, {
+      "name" : "Level 3",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Level 3"
+    }, {
+      "name" : "Level 4",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Level 4"
+    }, {
+      "name" : "Product Category",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Product Category"
+    }, {
+      "name" : "SPG Code",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.SPG Code"
+    }, {
+      "name" : "SPG Parent",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.SPG Parent"
+    }, {
+      "name" : "Sales Product Group",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Products.Sales Product Group"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Products by Levels Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.All Products"
+      }, {
+        "name" : "Level 1",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Level 1",
+        "displayColumn" : "presentationColumn:PC5.Products.Level 1"
+      }, {
+        "name" : "Level 2",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Level 2",
+        "displayColumn" : "presentationColumn:PC5.Products.Level 2"
+      }, {
+        "name" : "Level 3",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Level 3",
+        "displayColumn" : "presentationColumn:PC5.Products.Level 3"
+      }, {
+        "name" : "Level 4",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Level 4",
+        "displayColumn" : "presentationColumn:PC5.Products.Level 4"
+      }, {
+        "name" : "Product Item",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Product Item",
+        "displayColumn" : "presentationColumn:PC5.Products.Item Description"
+      } ]
+    }, {
+      "name" : "Product by SPG Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.All Products"
+      }, {
+        "name" : "SPG Parent",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.SPG Parent",
+        "displayColumn" : "presentationColumn:PC5.Products.SPG Parent"
+      }, {
+        "name" : "Sales Product Group",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Sales Product Group",
+        "displayColumn" : "presentationColumn:PC5.Products.SPG Code"
+      }, {
+        "name" : "Product Item",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Product Item",
+        "displayColumn" : "presentationColumn:PC5.Products.Item Description"
+      } ]
+    }, {
+      "name" : "Premium Products Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.All Products"
+      }, {
+        "name" : "Downgrade Flag",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Downgrade Flag",
+        "displayColumn" : "presentationColumn:PC5.Products.Downgrade Flag"
+      }, {
+        "name" : "Product Item",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Products.Product Item",
+        "displayColumn" : "presentationColumn:PC5.Products.Item Description"
+      } ]
+    } ]
+  }
+}

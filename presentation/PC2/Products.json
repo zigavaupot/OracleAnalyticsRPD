@@ -1,0 +1,120 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "PROD_CATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_CATEGORY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_EFF_FROM",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_EFF_FROM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_EFF_TO",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_EFF_TO",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_SRC_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_SRC_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_SUBCATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_SUBCATEGORY_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_TOTAL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_TOTAL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_VALID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.PROD_VALID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product"
+    }, {
+      "name" : "Product Category",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Category"
+    }, {
+      "name" : "Product Category Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Category Description"
+    }, {
+      "name" : "Product Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Description"
+    }, {
+      "name" : "Product List Price",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product List Price"
+    }, {
+      "name" : "Product Minimum Price",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Minimum Price"
+    }, {
+      "name" : "Product Pack Size",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Pack Size"
+    }, {
+      "name" : "Product Status",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Status"
+    }, {
+      "name" : "Product Sub-Category",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Sub-Category"
+    }, {
+      "name" : "Product Sub-Category Description",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Sub-Category Description"
+    }, {
+      "name" : "Product Weight Class",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Product Weight Class"
+    }, {
+      "name" : "Supplier ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Supplier ID"
+    }, {
+      "name" : "Unit of Measure",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Products.Unit of Measure"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Products Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM2.Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Products.All Products"
+      }, {
+        "name" : "Product Category",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Products.Product Category",
+        "displayColumn" : "presentationColumn:PC2.Products.Product Category Description"
+      }, {
+        "name" : "Product Sub-Category",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Products.Product Sub-Category",
+        "displayColumn" : "presentationColumn:PC2.Products.Product Sub-Category"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:BM2.Products.Product",
+        "displayColumn" : "presentationColumn:PC2.Products.Product"
+      } ]
+    } ]
+  }
+}

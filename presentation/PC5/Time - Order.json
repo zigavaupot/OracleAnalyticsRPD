@@ -1,0 +1,183 @@
+{
+  "presentationTable" : {
+    "name" : "Time - Order",
+    "description" : "Time Dimension",
+    "presentationColumns" : [ {
+      "name" : "Calendar Half Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Half Year"
+    }, {
+      "name" : "Calendar Month Code",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Month Code"
+    }, {
+      "name" : "Calendar Month Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Month Id"
+    }, {
+      "name" : "Calendar Quarter",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Quarter"
+    }, {
+      "name" : "Calendar Quarter End Date",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Quarter End Date"
+    }, {
+      "name" : "Calendar Quarter Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Quarter Id"
+    }, {
+      "name" : "Calendar Quarter Start Date",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Quarter Start Date"
+    }, {
+      "name" : "Calendar Trimester",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Trimester"
+    }, {
+      "name" : "Calendar Week",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Week"
+    }, {
+      "name" : "Calendar Week End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Week End Date Id"
+    }, {
+      "name" : "Calendar Week Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Week Start Date Id"
+    }, {
+      "name" : "Calendar Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year"
+    }, {
+      "name" : "Calendar Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year End Date"
+    }, {
+      "name" : "Calendar Year End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year End Date Id"
+    }, {
+      "name" : "Calendar Year Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year Id"
+    }, {
+      "name" : "Calendar Year Start Date",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year Start Date"
+    }, {
+      "name" : "Calendar Year Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Calendar Year Start Date Id"
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Date"
+    }, {
+      "name" : "Date ID",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Date ID"
+    }, {
+      "name" : "Date Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Date Timestamp"
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Day Name"
+    }, {
+      "name" : "Day Of Month",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Day Of Month"
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Day Of Week"
+    }, {
+      "name" : "Day Of Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Day Of Year"
+    }, {
+      "name" : "End Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.End Calendar Date Id"
+    }, {
+      "name" : "Enterprise Half Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Enterprise Half Year"
+    }, {
+      "name" : "First Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.First Day of Calendar Month Flag"
+    }, {
+      "name" : "First Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.First Day of Calendar Quarter Flag"
+    }, {
+      "name" : "First Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.First Day of Calendar Week Flag"
+    }, {
+      "name" : "First Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.First Day of Calendar Year Flag"
+    }, {
+      "name" : "Julian Day Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Day Number"
+    }, {
+      "name" : "Julian Month Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Month Number"
+    }, {
+      "name" : "Julian Quarter Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Quarter Number"
+    }, {
+      "name" : "Julian Trimester Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Trimester Number"
+    }, {
+      "name" : "Julian Week Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Week Number"
+    }, {
+      "name" : "Julian Year Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Julian Year Number"
+    }, {
+      "name" : "Last Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Last Day of Calendar Month Flag"
+    }, {
+      "name" : "Last Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Last Day of Calendar Quarter Flag"
+    }, {
+      "name" : "Last Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Last Day of Calendar Week Flag"
+    }, {
+      "name" : "Last Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Last Day of Calendar Year Flag"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Month"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Month Name"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Quarter"
+    }, {
+      "name" : "Start Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Start Calendar Date Id"
+    }, {
+      "name" : "Trimester",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Trimester"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Week"
+    }, {
+      "name" : "Week By Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Week By Year"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Time - Order.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Time - Order",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Year",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Year"
+      }, {
+        "name" : "Enterprise Half Year",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Enterprise Half Year",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Enterprise Half Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Quarter",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Month",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Month"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Week",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Time - Order.Day",
+        "displayColumn" : "presentationColumn:PC5.Time - Order.Date"
+      } ]
+    } ]
+  }
+}

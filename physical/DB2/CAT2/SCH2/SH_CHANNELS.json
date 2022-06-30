@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "SH_CHANNELS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHANNEL_TOTAL",
+      "dataType" : "VARCHAR",
+      "length" : 13,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_CLASS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_CLASS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CHANNEL_ID" ], [ "CHANNEL_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

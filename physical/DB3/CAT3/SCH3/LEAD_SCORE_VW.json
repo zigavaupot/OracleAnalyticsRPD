@@ -1,0 +1,197 @@
+{
+  "physicalTable" : {
+    "name" : "LEAD_SCORE_VW",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ASYMMETRIQUE_ACTIVITY_INDEX",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "ASYMMETRIQUE_ACTIVITY_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_INDEX",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "A_FREE_COPY_OF_MASTERING_THE_I",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "CITY",
+      "dataType" : "VARCHAR",
+      "length" : 27,
+      "nullable" : true
+    }, {
+      "name" : "CONVERTED",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "DIGITAL_ADVERTISEMENT",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "DO_NOT_CALL",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "DO_NOT_EMAIL",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "GET_UPDATES_ON_DM_CONTENT",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "HOW_DID_YOU_HEAR_ABOUT_X_EDUCA",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "I_AGREE_TO_PAY_THE_AMOUNT_THRO",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "LAST_ACTIVITY",
+      "dataType" : "VARCHAR",
+      "length" : 28,
+      "nullable" : true
+    }, {
+      "name" : "LAST_NOTABLE_ACTIVITY",
+      "dataType" : "VARCHAR",
+      "length" : 28,
+      "nullable" : true
+    }, {
+      "name" : "LEAD_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LEAD_ORIGIN",
+      "dataType" : "VARCHAR",
+      "length" : 23,
+      "nullable" : true
+    }, {
+      "name" : "LEAD_PROFILE",
+      "dataType" : "VARCHAR",
+      "length" : 27,
+      "nullable" : true
+    }, {
+      "name" : "LEAD_QUALITY",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "LEAD_SOURCE",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "MAGAZINE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "NEWSPAPER",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NEWSPAPER_ARTICLE",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "PAGE_VIEWS_PER_VISIT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROSPECT_ID",
+      "dataType" : "VARCHAR",
+      "length" : 36,
+      "nullable" : true
+    }, {
+      "name" : "RECEIVE_MORE_UPDATES_ABOUT_OUR",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "SEARCH",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "SPECIALIZATION",
+      "dataType" : "VARCHAR",
+      "length" : 33,
+      "nullable" : true
+    }, {
+      "name" : "TAGS",
+      "dataType" : "VARCHAR",
+      "length" : 49,
+      "nullable" : true
+    }, {
+      "name" : "THROUGH_RECOMMENDATIONS",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_TIME_SPENT_ON_WEBSITE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_VISITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UPDATE_ME_ON_SUPPLY_CHAIN_CONT",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "WHAT_IS_YOUR_CURRENT_OCCUPATIO",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "WHAT_MATTERS_MOST_TO_YOU_IN_CH",
+      "dataType" : "VARCHAR",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "X_EDUCATION_FORUMS",
+      "dataType" : "VARCHAR",
+      "length" : 3,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "LEAD_NUMBER" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

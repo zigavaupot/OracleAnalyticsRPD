@@ -1,0 +1,197 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Stores",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Store" ],
+    "logicalColumns" : [ {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "City"
+    }, {
+      "name" : "County",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_COUNTY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "County"
+    }, {
+      "name" : "Latitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Longitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_LON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Population",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_POPULATION_LARG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_STATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "State"
+    }, {
+      "name" : "State Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE_STATE_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Store",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Store"
+    }, {
+      "name" : "ZIP Code",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE_ZIP_CODE" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CARBO_STORE_LOOKUP_ENRICHED_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "State",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "State" ],
+        "displayKey" : "State",
+        "chronologicalKey" : [ "State" ]
+      }, {
+        "name" : "County",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "County" ],
+        "displayKey" : "County",
+        "chronologicalKey" : [ "County" ]
+      }, {
+        "name" : "City",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "City" ],
+        "displayKey" : "City",
+        "chronologicalKey" : [ "City" ]
+      }, {
+        "name" : "Store",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Store" ],
+        "displayKey" : "Store",
+        "chronologicalKey" : [ "Store" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Stores [branch at level 'City']",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "State", "County", "City", "Store" ]
+      } ]
+    }
+  }
+}

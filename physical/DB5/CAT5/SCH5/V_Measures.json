@@ -1,0 +1,199 @@
+{
+  "physicalTable" : {
+    "name" : "V_Measures",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CREDIT_DEBIT_NOTE_VALUE",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "EXCESS_STORAGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "FIXED_MILK_PRICE_MODF_EUR_PER_",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "GROSS_SALES_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "GROSS_SELLING_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_MILK_COST_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_VALUE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ITEM_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "MARGINAL_CONTN_TOTAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "NET_CONTRIBUTION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "NET_RETURN_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "NET_SALES_RETURN_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "NORMAL_STORAGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ORDERED_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "ORGANISATION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : false
+    }, {
+      "name" : "ORNUA_REALISATIONS_BONUS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "REBATES_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "SHIPPED_QTY_TNS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT_2",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "NONPREM_DISCOUNT_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "NET_CONTRIBUTION_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "NONPREM_DISCOUNT_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "NET_RETURN_EUR_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "REBATE_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "MILK_SOLIDS_COST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.CUSTOMER_ACCOUNT_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_INVOICES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_INVOICES.INVOICE_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_ORGANISATIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.ORGANISATION_NAME",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_ORGANISATIONS.ORGANISATION_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.ITEM_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.ORDERED_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME_INV",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Measures.INVOICE_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_DT"
+      } ]
+    } ]
+  }
+}

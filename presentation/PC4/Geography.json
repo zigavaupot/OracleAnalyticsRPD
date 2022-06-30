@@ -1,0 +1,85 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "presentationColumns" : [ {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Address 1"
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Address 2"
+    }, {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Address Key"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Area"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.City"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Country"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Country Code"
+    }, {
+      "name" : "LATITUDE",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.LATITUDE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LONGITUDE",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.LONGITUDE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Postal Code"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.Region"
+    }, {
+      "name" : "State-Province",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Geography.State-Province"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geography Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM4.Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.All Geographies"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.Region",
+        "displayColumn" : "presentationColumn:PC4.Geography.Region"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.Area",
+        "displayColumn" : "presentationColumn:PC4.Geography.Area"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.Country",
+        "displayColumn" : "presentationColumn:PC4.Geography.Country"
+      }, {
+        "name" : "State-Province",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.State-Province",
+        "displayColumn" : "presentationColumn:PC4.Geography.State-Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.City",
+        "displayColumn" : "presentationColumn:PC4.Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.Postal Code",
+        "displayColumn" : "presentationColumn:PC4.Geography.Postal Code"
+      }, {
+        "name" : "Address",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Geography.Address",
+        "displayColumn" : "presentationColumn:PC4.Geography.Address 1"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "logicalTable" : {
+    "name" : "DUMMY_TABLE_FACT",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "DUMMY_COLUMN",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DUMMY_TABLE_FACT",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DUMMY.DUMMY_TABLE_FACT.DUMMY_COLUMN" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DUMMY_TABLE_FACT",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DUMMY.DUMMY_TABLE_FACT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:DUMMY.DUMMY_TABLE_DIM",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

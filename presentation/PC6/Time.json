@@ -1,0 +1,299 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "description" : "Time Dimension",
+    "presentationColumns" : [ {
+      "name" : "Calendar Half Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Half Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Month Code",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Month Code",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Month Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Month Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Quarter",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter End Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Quarter End Date",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Quarter Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Quarter Start Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Quarter Start Date",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Trimester",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Trimester",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Week",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Week",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Week End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Week End Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Week Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Week Start Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year End Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year End Date",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year End Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year End Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Start Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year Start Date",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Calendar Year Start Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Calendar Year Start Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Date"
+    }, {
+      "name" : "Date ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Date ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Date Timestamp"
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Day Name"
+    }, {
+      "name" : "Day Of Month",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Day Of Month",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day Of Week",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Day Of Week"
+    }, {
+      "name" : "Day Of Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Day Of Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "End Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.End Calendar Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Enterprise Half Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Enterprise Half Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.First Day of Calendar Month Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.First Day of Calendar Quarter Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.First Day of Calendar Week Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "First Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.First Day of Calendar Year Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Day Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Day Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Month Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Month Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Quarter Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Quarter Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Trimester Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Trimester Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Week Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Week Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Julian Year Number",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Julian Year Number",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Month Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Last Day of Calendar Month Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Quarter Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Last Day of Calendar Quarter Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Week Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Last Day of Calendar Week Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Last Day of Calendar Year Flag",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Last Day of Calendar Year Flag",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Month"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Month Name",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Quarter"
+    }, {
+      "name" : "Start Calendar Date Id",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Start Calendar Date Id",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Trimester",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Trimester",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Week"
+    }, {
+      "name" : "Week By Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Week By Year",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:BM6.Time.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Year",
+        "displayColumn" : "presentationColumn:PC6.Time.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Quarter",
+        "displayColumn" : "presentationColumn:PC6.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Month",
+        "displayColumn" : "presentationColumn:PC6.Time.Month"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Week",
+        "displayColumn" : "presentationColumn:PC6.Time.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:BM6.Time.Day",
+        "displayColumn" : "presentationColumn:PC6.Time.Date"
+      } ]
+    } ]
+  }
+}

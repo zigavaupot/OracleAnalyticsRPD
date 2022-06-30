@@ -1,0 +1,58 @@
+{
+  "physicalTable" : {
+    "name" : "FRAT_PLAN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DAY_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PLAN_SPEND",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PLAN_UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.DUNNHUMBY_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_PLAN.DAY_DT",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.DUNNHUMBY_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.FRAT_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_PLAN.UPC",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.UPC"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.FRAT_STORES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_PLAN.STORE_ID",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.STORE_ID"
+      } ]
+    } ]
+  }
+}

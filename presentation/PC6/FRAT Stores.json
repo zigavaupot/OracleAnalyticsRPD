@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "FRAT Stores",
+    "presentationColumns" : [ {
+      "name" : "Avg Weekly Baskets",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Avg Weekly Baskets"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.City"
+    }, {
+      "name" : "MSA Code",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.MSA Code"
+    }, {
+      "name" : "Parking Space Capacity",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Parking Space Capacity"
+    }, {
+      "name" : "Sales Area Size",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Sales Area Size"
+    }, {
+      "name" : "Segment Value Name",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Segment Value Name"
+    }, {
+      "name" : "State-Province",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.State-Province"
+    }, {
+      "name" : "Store ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Store ID"
+    }, {
+      "name" : "Store Name",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Stores.Store Name"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Stores Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.FRAT Stores",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Stores.Total"
+      }, {
+        "name" : "State-Province",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Stores.State-Province",
+        "displayColumn" : "presentationColumn:PC6.FRAT Stores.State-Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Stores.City",
+        "displayColumn" : "presentationColumn:PC6.FRAT Stores.City"
+      }, {
+        "name" : "Store",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Stores.Store",
+        "displayColumn" : "presentationColumn:PC6.FRAT Stores.Store Name"
+      } ]
+    } ]
+  }
+}

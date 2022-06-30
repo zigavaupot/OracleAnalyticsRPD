@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Payment Metrics",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.COST_FIXED",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.COST_VARIABLE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.CUST_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.DISCNT_VALUE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ORDER_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.ORDER_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.PROD_ITEM_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Paid Amount",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.Paid Amount"
+    }, {
+      "name" : "Paid Unit LY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.Paid Unit LY"
+    }, {
+      "name" : "Paid Units",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.Paid Units"
+    }, {
+      "name" : "Paid Units YTD",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.Paid Units YTD"
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Payment Metrics.TIME_PAID_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

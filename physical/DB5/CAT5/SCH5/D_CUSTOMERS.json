@@ -1,0 +1,67 @@
+{
+  "physicalTable" : {
+    "name" : "D_CUSTOMERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 65,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_PARENT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 65,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_PROFILE",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "DFI_MARKET",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "END_APPLICATION_DFI",
+      "dataType" : "VARCHAR",
+      "length" : 19,
+      "nullable" : true
+    }, {
+      "name" : "SALES_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 11,
+      "nullable" : true
+    }, {
+      "name" : "SALES_PERSON",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : true
+    }, {
+      "name" : "STRATEGIC_RATING",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "DFI_SECTOR",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "CUSTOMER_ACCOUNT_NUMBER" ], [ "CUSTOMER_ACCOUNT_NUMBER" ], [ "CUSTOMER_ACCOUNT_NUMBER" ], [ "CUSTOMER_ACCOUNT_NUMBER" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

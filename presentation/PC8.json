@@ -1,0 +1,23 @@
+{
+  "subjectArea" : {
+    "name" : "PC8",
+    "sourceBusinessModel" : "businessModel:BM8",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC8.Customers"
+    }, {
+      "name" : "presentationTable:PC8.Geography"
+    }, {
+      "name" : "presentationTable:PC8.Orders"
+    }, {
+      "name" : "presentationTable:PC8.Time"
+    }, {
+      "name" : "presentationTable:PC8.Paid Metrics"
+    }, {
+      "name" : "presentationTable:PC8.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC8",
+      "nameVariable" : "OABOOTCAMP 99"
+    }
+  }
+}

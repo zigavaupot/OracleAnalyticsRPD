@@ -1,0 +1,57 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO_STORE_LOOKUP_ENRICHED",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "STORE_ZIP_CODE_CITY",
+      "dataType" : "VARCHAR",
+      "length" : 27,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_COUNTY",
+      "dataType" : "VARCHAR",
+      "length" : 32,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_LON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_POPULATION_LARG",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_STATE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE_STATE_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "STORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_ZIP_CODE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "STORE" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

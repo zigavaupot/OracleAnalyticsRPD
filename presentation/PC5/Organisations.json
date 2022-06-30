@@ -1,0 +1,22 @@
+{
+  "presentationTable" : {
+    "name" : "Organisations",
+    "presentationColumns" : [ {
+      "name" : "Organisation",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Organisations.Organisation"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Organisations Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Organisations",
+      "levels" : [ {
+        "name" : "All Organisations",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Organisations.All Organisations"
+      }, {
+        "name" : "Organisation",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Organisations.Organisation",
+        "displayColumn" : "presentationColumn:PC5.Organisations.Organisation"
+      } ]
+    } ]
+  }
+}

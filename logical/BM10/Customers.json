@@ -1,0 +1,204 @@
+{
+  "logicalTable" : {
+    "name" : "Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Customer Number" ],
+    "logicalColumns" : [ {
+      "name" : "Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_BIRTH_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Credit Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_CRDT_RATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Number",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Segment",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_SEGMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer Segment"
+    }, {
+      "name" : "Customer Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_TYPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_GENDER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gender"
+    }, {
+      "name" : "Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_CUSTOMERS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_MARITAL_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Marital Status"
+    }, {
+      "name" : "Age",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  CURRENT_DATE )",
+          "expressionObjects" : [ "logicalColumn:BM10.Customers.Birth Date" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_CUSTOMERS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB10.CAT10.SCH10.D_CUSTOMERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Customers",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Customers",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Customer Segment",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Segment" ],
+        "displayKey" : "Customer Segment",
+        "chronologicalKey" : [ "Customer Segment" ]
+      }, {
+        "name" : "Customer",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Number" ],
+        "displayKey" : "Customer Name",
+        "additionalKeys" : [ [ "Customer Name" ] ],
+        "chronologicalKey" : [ "Customer Number" ]
+      }, {
+        "name" : "Gender",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gender" ],
+        "displayKey" : "Gender",
+        "chronologicalKey" : [ "Gender" ]
+      }, {
+        "name" : "Marital Status",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Marital Status" ],
+        "displayKey" : "Marital Status",
+        "chronologicalKey" : [ "Marital Status" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Customers [branch at level 'Customer Segment']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Customer Segment", "Customer" ]
+      }, {
+        "name" : "Customers [branch at level 'Gender']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Gender", "Customer" ]
+      }, {
+        "name" : "Customers [branch at level 'Marital Status']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Marital Status", "Customer" ]
+      } ]
+    }
+  }
+}

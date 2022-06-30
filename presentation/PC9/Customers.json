@@ -1,0 +1,46 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Age",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Age"
+    }, {
+      "name" : "Birth date",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Birth date"
+    }, {
+      "name" : "CUST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.CUST_NAME"
+    }, {
+      "name" : "Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Credit Rate"
+    }, {
+      "name" : "Customer Number",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Customer Number"
+    }, {
+      "name" : "Customer Segment",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Customer Segment"
+    }, {
+      "name" : "Customer Type",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Customer Type"
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Gender"
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Customers.Marital Status"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM9.Customers",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Customers.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM9.Customers.Detail",
+        "displayColumn" : "presentationColumn:PC9.Customers.Customer Number"
+      } ]
+    } ]
+  }
+}

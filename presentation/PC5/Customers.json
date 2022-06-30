@@ -1,0 +1,56 @@
+{
+  "presentationTable" : {
+    "name" : "Customers",
+    "presentationColumns" : [ {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Country"
+    }, {
+      "name" : "Customer Account Name",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Customer Account Name"
+    }, {
+      "name" : "Customer Account Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Customer Account Number"
+    }, {
+      "name" : "Customer Parent Name",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Customer Parent Name"
+    }, {
+      "name" : "Customer Profile",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Customer Profile"
+    }, {
+      "name" : "DFI Market",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.DFI Market"
+    }, {
+      "name" : "DFI Sector",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.DFI Sector"
+    }, {
+      "name" : "End Application DFI",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.End Application DFI"
+    }, {
+      "name" : "Sales Category",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Sales Category"
+    }, {
+      "name" : "Sales Person",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Sales Person"
+    }, {
+      "name" : "Strategic Rating",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Customers.Strategic Rating"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Customers by Country Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Customers.All Customers"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Customers.Country",
+        "displayColumn" : "presentationColumn:PC5.Customers.Country"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Customers.Customer",
+        "displayColumn" : "presentationColumn:PC5.Customers.Customer Account Name"
+      } ]
+    } ]
+  }
+}

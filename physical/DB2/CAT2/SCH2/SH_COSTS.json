@@ -1,0 +1,70 @@
+{
+  "physicalTable" : {
+    "name" : "SH_COSTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHANNEL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROD_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "TIME_ID",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "UNIT_COST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_CHANNELS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_COSTS.CHANNEL_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_COSTS.PROD_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_PRODUCTS.PROD_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_PROMOTIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_COSTS.PROMO_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_TIMES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_COSTS.TIME_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.TIME_ID"
+      } ]
+    } ]
+  }
+}

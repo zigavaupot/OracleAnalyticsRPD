@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Profit Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.# of Customers",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.# of Orders",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.# of Products",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Fixed Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.Fixed Costs"
+    }, {
+      "name" : "Profit Ratio %",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.Profit Ratio %"
+    }, {
+      "name" : "Profit Value",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.Profit Value"
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.REVENUE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Total Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.Total Costs"
+    }, {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.UNITS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM0.Profit Metrics.Variable Costs"
+    } ]
+  }
+}

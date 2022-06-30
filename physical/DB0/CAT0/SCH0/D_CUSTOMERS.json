@@ -1,0 +1,52 @@
+{
+  "physicalTable" : {
+    "name" : "D_CUSTOMERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CUST_BIRTH_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CUST_CRDT_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUST_SEGMENT",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUST_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUST_GENDER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUST_MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "CUST_NUMBER" ], [ "CUST_NUMBER" ], [ "CUST_NUMBER" ], [ "CUST_NUMBER" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

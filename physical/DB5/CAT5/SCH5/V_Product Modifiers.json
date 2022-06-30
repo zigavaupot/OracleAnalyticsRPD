@@ -1,0 +1,244 @@
+{
+  "physicalTable" : {
+    "name" : "V_Product Modifiers",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BIRDS_EYE_SERVICES_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "BIRDS_EYE_SERVICES_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "E_PALLET_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "INVOICE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "ITEM_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : false
+    }, {
+      "name" : "KOSHERING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "KOSHERING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MATURATION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MATURATION_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MILK_SOLIDS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MILK_SOLIDS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MOISTURE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "MOISTURE_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ORDERED_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    }, {
+      "name" : "ORGANISATION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : false
+    }, {
+      "name" : "PALLETIZING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PRODUCT_MODIFIERS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PRODUCT_TESTING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PRODUCT_TESTING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "RFT_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "RFT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "RITTER_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "RITTER_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : false
+    }, {
+      "name" : "THROUGHPUT_ABSORPTION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "THROUGHPUT_ABSORP_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "BOM_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DEPRECIATION_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INDIRECT_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "INDIRECT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DIRECT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CONVERSION_COSTS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DIRECT_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CENTRAL_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "BOM_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CENTRAL_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DEPRECIATION_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.CUSTOMER_ACCOUNT_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_INVOICES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INVOICE_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_INVOICES.INVOICE_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_ORGANISATIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ORGANISATION_NAME",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_ORGANISATIONS.ORGANISATION_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ITEM_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ORDERED_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME_INV",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INVOICE_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_DT"
+      } ]
+    } ]
+  }
+}

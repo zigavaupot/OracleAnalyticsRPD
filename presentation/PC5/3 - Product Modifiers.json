@@ -1,0 +1,176 @@
+{
+  "presentationTable": {
+    "name": "3 - Product Modifiers",
+    "presentationColumns": [ {
+        "name": "BOM ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.BOM ¤"
+      },
+      {
+        "name": "BOM ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.BOM ¤ Tn"
+      },
+      {
+        "name": "Birds Eye Services ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Birds Eye Services ¤"
+      },
+      {
+        "name": "Birds Eye Services ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Birds Eye Services ¤ Tn"
+      },
+      {
+        "name": "CUSTOMER_ACCOUNT_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.CUSTOMER_ACCOUNT_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Central Costs ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Central Costs ¤"
+      },
+      {
+        "name": "Central ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Central ¤ Tn"
+      },
+      {
+        "name": "Conversion Costs Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Conversion Costs Total ¤"
+      },
+      {
+        "name": "Depreciation Costs ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Depreciation Costs ¤"
+      },
+      {
+        "name": "Depreciation ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Depreciation ¤ Tn"
+      },
+      {
+        "name": "Direct Costs ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Direct Costs ¤"
+      },
+      {
+        "name": "Direct ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Direct ¤ Tn"
+      },
+      {
+        "name": "E Pallet ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.E Pallet ¤ Tn"
+      },
+      {
+        "name": "INVOICE_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.INVOICE_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "INVOICE_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.INVOICE_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.ITEM_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Indirect Costs ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Indirect Costs ¤"
+      },
+      {
+        "name": "Indirect ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Indirect ¤ Tn"
+      },
+      {
+        "name": "Koshering ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Koshering ¤"
+      },
+      {
+        "name": "Koshering ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Koshering ¤ Tn"
+      },
+      {
+        "name": "Maturation ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Maturation ¤"
+      },
+      {
+        "name": "Maturation ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Maturation ¤ Tn"
+      },
+      {
+        "name": "Milk Solids ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Milk Solids ¤"
+      },
+      {
+        "name": "Milk Solids ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Milk Solids ¤ Tn"
+      },
+      {
+        "name": "Moisture ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Moisture ¤"
+      },
+      {
+        "name": "Moisture ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Moisture ¤ Tn"
+      },
+      {
+        "name": "ORDERED_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.ORDERED_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.ORGANISATION_NAME",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Palletizing ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Palletizing ¤"
+      },
+      {
+        "name": "Product Modifiers Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Product Modifiers Total ¤"
+      },
+      {
+        "name": "Product Testing ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Product Testing ¤"
+      },
+      {
+        "name": "Product Testing ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Product Testing ¤ Tn"
+      },
+      {
+        "name": "Rft ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Rft ¤"
+      },
+      {
+        "name": "Rft ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Rft ¤ Tn"
+      },
+      {
+        "name": "Ritter ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Ritter ¤"
+      },
+      {
+        "name": "Ritter ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Ritter ¤ Tn"
+      },
+      {
+        "name": "Throughput Absorp ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Throughput Absorp ¤"
+      },
+      {
+        "name": "Throughput Absorp ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.3 - Product Modifiers.Throughput Absorp ¤ Tn"
+      }
+    ]
+  }
+}

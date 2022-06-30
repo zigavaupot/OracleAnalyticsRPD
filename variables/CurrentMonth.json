@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "CurrentMonth",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select to_char(sysdate, 'Mon') from dual"
+    } ],
+    "variables" : [ {
+      "name" : "CurrentMonth",
+      "description" : "RAAS_",
+      "value" : "''",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

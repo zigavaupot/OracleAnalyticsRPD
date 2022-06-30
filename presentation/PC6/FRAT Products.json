@@ -1,0 +1,60 @@
+{
+  "presentationTable" : {
+    "name" : "FRAT Products",
+    "presentationColumns" : [ {
+      "name" : "Category",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Category"
+    }, {
+      "name" : "Manufacturer",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Manufacturer"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Product"
+    }, {
+      "name" : "Product Size",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Product Size"
+    }, {
+      "name" : "Product UPC",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Product UPC"
+    }, {
+      "name" : "Sub-Category",
+      "sourceLogicalColumn" : "logicalColumn:BM6.FRAT Products.Sub-Category"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Category Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.FRAT Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Total"
+      }, {
+        "name" : "Category",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Category",
+        "displayColumn" : "presentationColumn:PC6.FRAT Products.Category"
+      }, {
+        "name" : "Sub-Category",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Sub-Category",
+        "displayColumn" : "presentationColumn:PC6.FRAT Products.Sub-Category"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Product",
+        "displayColumn" : "presentationColumn:PC6.FRAT Products.Product"
+      } ]
+    }, {
+      "name" : "Manufacturer Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM6.FRAT Products",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Total"
+      }, {
+        "name" : "Manufacturer",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Manufacturer",
+        "displayColumn" : "presentationColumn:PC6.FRAT Products.Manufacturer"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:BM6.FRAT Products.Product",
+        "displayColumn" : "presentationColumn:PC6.FRAT Products.Product"
+      } ]
+    } ]
+  }
+}

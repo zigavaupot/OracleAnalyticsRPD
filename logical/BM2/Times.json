@@ -1,0 +1,632 @@
+{
+  "logicalTable" : {
+    "name" : "Times",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Date" ],
+    "logicalColumns" : [ {
+      "name" : "CALENDAR_MONTH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_MONTH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_MONTH_NUMBER",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_MONTH_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_QUARTER_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_QUARTER_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_QUARTER_NUMBER",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_QUARTER_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_WEEK_NUMBER",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_WEEK_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CALENDAR_YEAR_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_YEAR_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Month",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_MONTH_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Calendar Month Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_MONTH_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Calendar Month"
+    }, {
+      "name" : "Calendar Quarter Description",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_QUARTER_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Calendar Quarter"
+    }, {
+      "name" : "Calendar Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.CALENDAR_YEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Calendar Year"
+    }, {
+      "name" : "DAYS_IN_CAL_MONTH",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_CAL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_CAL_QUARTER",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_CAL_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_CAL_YEAR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_CAL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_MONTH",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_FIS_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_QUARTER",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_FIS_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_FIS_YEAR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAYS_IN_FIS_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAY_NUMBER_IN_MONTH",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAY_NUMBER_IN_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAY_NUMBER_IN_WEEK",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAY_NUMBER_IN_WEEK" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.TIME_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Date"
+    }, {
+      "name" : "Day",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.DAY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_CAL_MONTH",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_CAL_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_CAL_QUARTER",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_CAL_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_CAL_YEAR",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_CAL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_FIS_MONTH",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_FIS_MONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_FIS_QUARTER",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_FIS_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "END_OF_FIS_YEAR",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.END_OF_FIS_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FISCAL_MONTH_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_MONTH_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FISCAL_MONTH_NUMBER",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_MONTH_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FISCAL_QUARTER_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_QUARTER_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FISCAL_QUARTER_NUMBER",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_QUARTER_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FISCAL_YEAR_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_YEAR_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Month",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_MONTH_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Month Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_MONTH_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Fiscal Month"
+    }, {
+      "name" : "Fiscal Quarter Description",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_QUARTER_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Fiscal Quarter"
+    }, {
+      "name" : "Fiscal Week Number",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_WEEK_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.FISCAL_YEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Fiscal Year"
+    }, {
+      "name" : "WEEK_ENDING_DAY",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.WEEK_ENDING_DAY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WEEK_ENDING_DAY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_TIMES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.WEEK_ENDING_DAY_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SH_TIMES_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB2.CAT2.SCH2.SH_TIMES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "TIME",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Times",
+      "logicalLevels" : [ {
+        "name" : "All Times",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Calendar Year",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Calendar Year" ],
+        "displayKey" : "Calendar Year",
+        "chronologicalKey" : [ "Calendar Year" ]
+      }, {
+        "name" : "Calendar Quarter",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Calendar Quarter Description" ],
+        "displayKey" : "Calendar Quarter Description",
+        "chronologicalKey" : [ "Calendar Quarter Description" ]
+      }, {
+        "name" : "Calendar Month",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Calendar Month Description" ],
+        "displayKey" : "Calendar Month Description",
+        "chronologicalKey" : [ "Calendar Month Description" ]
+      }, {
+        "name" : "Date",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Date" ],
+        "displayKey" : "Date",
+        "chronologicalKey" : [ "Date" ]
+      }, {
+        "name" : "Fiscal Year",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Fiscal Year" ],
+        "displayKey" : "Fiscal Year",
+        "chronologicalKey" : [ "Fiscal Year" ]
+      }, {
+        "name" : "Fiscal Quarter",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Fiscal Quarter Description" ],
+        "displayKey" : "Fiscal Quarter Description",
+        "chronologicalKey" : [ "Fiscal Quarter Description" ]
+      }, {
+        "name" : "Fiscal Month",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Fiscal Month Description" ],
+        "displayKey" : "Fiscal Month Description",
+        "chronologicalKey" : [ "Fiscal Month Description" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Times [branch at level 'Calendar Month']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Times", "Calendar Year", "Calendar Quarter", "Calendar Month", "Date" ]
+      }, {
+        "name" : "Times [branch at level 'Fiscal Month']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Times", "Fiscal Year", "Fiscal Quarter", "Fiscal Month", "Date" ]
+      } ]
+    }
+  }
+}

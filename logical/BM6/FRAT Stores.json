@@ -1,0 +1,190 @@
+{
+  "logicalTable" : {
+    "name" : "FRAT Stores",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Store ID" ],
+    "logicalColumns" : [ {
+      "name" : "Avg Weekly Baskets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.AVG_WEEKLY_BASKETS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.ADDRESS_CITY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "City"
+    }, {
+      "name" : "MSA Code",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.MSA_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Parking Space Capacity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.PARKING_SPACE_QTY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Sales Area Size",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.SALES_AREA_SIZE_NUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Segment Value Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.SEG_VALUE_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "State-Province",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.ADDRESS_STATE_PROV_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "State-Province"
+    }, {
+      "name" : "Store ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.STORE_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Store"
+    }, {
+      "name" : "Store Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FRAT_STORES_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.STORE_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Store"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FRAT_STORES_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.FRAT_STORES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "State-Province",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "State-Province" ],
+        "displayKey" : "State-Province",
+        "chronologicalKey" : [ "State-Province" ]
+      }, {
+        "name" : "City",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "City" ],
+        "displayKey" : "City",
+        "chronologicalKey" : [ "City" ]
+      }, {
+        "name" : "Store",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Store ID" ],
+        "displayKey" : "Store Name",
+        "additionalKeys" : [ [ "Store Name" ] ],
+        "chronologicalKey" : [ "Store ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "FRAT Stores [branch at level 'City']",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "State-Province", "City", "Store" ]
+      } ]
+    }
+  }
+}

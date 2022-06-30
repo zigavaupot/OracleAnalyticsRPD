@@ -1,0 +1,216 @@
+{
+  "presentationTable" : {
+    "name" : "LEAD_SCORE",
+    "presentationColumns" : [ {
+      "name" : "ASYMMETRIQUE_ACTIVITY_INDEX",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.ASYMMETRIQUE_ACTIVITY_INDEX",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_ACTIVITY_SCORE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.ASYMMETRIQUE_ACTIVITY_SCORE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_INDEX",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.ASYMMETRIQUE_PROFILE_INDEX",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ASYMMETRIQUE_PROFILE_SCORE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.ASYMMETRIQUE_PROFILE_SCORE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "A_FREE_COPY_OF_MASTERING_THE_I",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.A_FREE_COPY_OF_MASTERING_THE_I",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.CITY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CONVERTED",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.CONVERTED",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COUNTRY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.COUNTRY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DIGITAL_ADVERTISEMENT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.DIGITAL_ADVERTISEMENT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DO_NOT_CALL",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.DO_NOT_CALL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DO_NOT_EMAIL",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.DO_NOT_EMAIL",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Duration",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.Duration"
+    }, {
+      "name" : "GET_UPDATES_ON_DM_CONTENT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.GET_UPDATES_ON_DM_CONTENT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "HOW_DID_YOU_HEAR_ABOUT_X_EDUCA",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.HOW_DID_YOU_HEAR_ABOUT_X_EDUCA",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "I_AGREE_TO_PAY_THE_AMOUNT_THRO",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.I_AGREE_TO_PAY_THE_AMOUNT_THRO",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_ACTIVITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LAST_ACTIVITY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_NOTABLE_ACTIVITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LAST_NOTABLE_ACTIVITY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LEAD_ORIGIN",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LEAD_ORIGIN",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LEAD_PROFILE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LEAD_PROFILE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LEAD_QUALITY",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LEAD_QUALITY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LEAD_SOURCE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.LEAD_SOURCE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "MAGAZINE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.MAGAZINE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "NEWSPAPER",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.NEWSPAPER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "NEWSPAPER_ARTICLE",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.NEWSPAPER_ARTICLE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Number of Leads",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.Number of Leads",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Prospects",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.Prospects"
+    }, {
+      "name" : "RECEIVE_MORE_UPDATES_ABOUT_OUR",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.RECEIVE_MORE_UPDATES_ABOUT_OUR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SEARCH",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.SEARCH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "SPECIALIZATION",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.SPECIALIZATION",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TAGS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.TAGS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "THROUGH_RECOMMENDATIONS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.THROUGH_RECOMMENDATIONS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "UPDATE_ME_ON_SUPPLY_CHAIN_CONT",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.UPDATE_ME_ON_SUPPLY_CHAIN_CONT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Views",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.Views"
+    }, {
+      "name" : "Visits",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.Visits"
+    }, {
+      "name" : "WHAT_IS_YOUR_CURRENT_OCCUPATIO",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.WHAT_IS_YOUR_CURRENT_OCCUPATIO",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "WHAT_MATTERS_MOST_TO_YOU_IN_CH",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.WHAT_MATTERS_MOST_TO_YOU_IN_CH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "X_EDUCATION_FORUMS",
+      "sourceLogicalColumn" : "logicalColumn:BM3.LEAD_SCORE.X_EDUCATION_FORUMS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

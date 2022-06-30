@@ -1,0 +1,55 @@
+{
+  "presentationTable" : {
+    "name" : "Geography",
+    "presentationColumns" : [ {
+      "name" : "Address 1",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Address 1"
+    }, {
+      "name" : "Address 2",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Address 2"
+    }, {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Address Key"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Area"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.City"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Country Code"
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Country Name"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Longitude"
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.Postal Code"
+    }, {
+      "name" : "RegionREGION",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.RegionREGION"
+    }, {
+      "name" : "State prov",
+      "sourceLogicalColumn" : "logicalColumn:BM11.Geography.State prov"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Hierarchy 1",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM11.Geography",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM11.Geography.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BM11.Geography.Detail",
+        "displayColumn" : "presentationColumn:PC11.Geography.Address Key"
+      } ]
+    } ]
+  }
+}

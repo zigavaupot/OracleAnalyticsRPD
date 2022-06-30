@@ -1,0 +1,280 @@
+{
+  "logicalTable" : {
+    "name" : "Advanced Calcs",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.ADDR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.COST_FIXED" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.COST_VARIABLE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.CUST_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.DISCNT_VALUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.ORDER_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.PROD_ITEM_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "TIME_BILL_DT",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.TIME_BILL_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.UNITS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Quarter Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:BM0.Geography.All Geographies", "logicalLevel:BM0.Orders.All Orders", "logicalLevel:BM0.Products.All Products", "logicalLevel:BM0.Customers.All Customers", "logicalLevel:BM0.Time.Quarter" ]
+      }
+    }, {
+      "name" : "% of Full Company Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:BM0.Advanced Calcs.Revenue", "logicalColumn:BM0.Advanced Calcs.Total Company Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Total Company Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "VF_BILL_REV_CALC_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB0.CAT0.SCH0.VF_BILL_REV_CALC.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:BM0.Geography.All Geographies", "logicalLevel:BM0.Orders.All Orders", "logicalLevel:BM0.Products.All Products", "logicalLevel:BM0.Customers.All Customers", "logicalLevel:BM0.Time.Total" ]
+      }
+    }, {
+      "name" : "% of Full Quarter Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100",
+          "expressionObjects" : [ "logicalColumn:BM0.Advanced Calcs.Revenue", "logicalColumn:BM0.Advanced Calcs.Total Quarter Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Rev - % Month Ago Increase",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 - 1",
+          "expressionObjects" : [ "logicalColumn:BM0.Revenue Metrics.Revenue", "logicalColumn:BM0.Advanced Calcs.Rev ? Month Ago" ]
+        }
+      }
+    }, {
+      "name" : "Rev ? Month Ago",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:BM0.Advanced Calcs.Revenue", "logicalLevel:BM0.Time.Month" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "VF_BILL_REV_CALC_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB0.CAT0.SCH0.VF_BILL_REV_CALC" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:BM0.Customers",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM0.Geography",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM0.Orders",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM0.Products",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:BM0.Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "presentationTable": {
+    "name": "2 - Customer Modifiers",
+    "presentationColumns": [ {
+        "name": "Age Restriction ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Age Restriction ¤"
+      },
+      {
+        "name": "Age Restriction ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Age Restriction ¤ Tn"
+      },
+      {
+        "name": "Bureau De Veritas ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Bureau De Veritas ¤"
+      },
+      {
+        "name": "Bureau De Veritas ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Bureau De Veritas ¤ Tn"
+      },
+      {
+        "name": "CUSTOMER_ACCOUNT_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.CUSTOMER_ACCOUNT_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Commissions Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Commissions Total ¤"
+      },
+      {
+        "name": "Credit Insurance Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Credit Insurance Total ¤"
+      },
+      {
+        "name": "Customer Modifiers Total",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Customer Modifiers Total"
+      },
+      {
+        "name": "Documentation ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Documentation ¤"
+      },
+      {
+        "name": "Documentation ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Documentation ¤ Tn"
+      },
+      {
+        "name": "Extra Labelling ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Extra Labelling ¤"
+      },
+      {
+        "name": "Extra Labelling ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Extra Labelling ¤ Tn"
+      },
+      {
+        "name": "INVOICE_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.INVOICE_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "INVOICE_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.INVOICE_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.ITEM_NUMBER",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Letters Credit Fact ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Letters Credit Fact ¤"
+      },
+      {
+        "name": "Letters Credit Fact ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Letters Credit Fact ¤ Tn"
+      },
+      {
+        "name": "Loose Loading ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Loose Loading ¤"
+      },
+      {
+        "name": "Loose Loading ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Loose Loading ¤ Tn"
+      },
+      {
+        "name": "ORDERED_DATE",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.ORDERED_DATE",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.ORGANISATION_NAME",
+        "hideIfTrue": {
+          "expressionTemplate": "1 = 1"
+        }
+      },
+      {
+        "name": "Specialized Pallets ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Specialized Pallets ¤"
+      },
+      {
+        "name": "Specialized Pallets ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Specialized Pallets ¤ Tn"
+      },
+      {
+        "name": "Storage ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Storage ¤"
+      },
+      {
+        "name": "Transport Total ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Transport Total ¤"
+      },
+      {
+        "name": "Working Capital ¤",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Working Capital ¤"
+      },
+      {
+        "name": "Working Capital ¤ Tn",
+        "sourceLogicalColumn": "logicalColumn:BM5.2 - Customer Modifiers.Working Capital ¤ Tn"
+      }
+    ]
+  }
+}

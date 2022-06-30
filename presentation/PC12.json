@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "PC12",
+    "description" : "Orders & Warehouses data model",
+    "sourceBusinessModel" : "businessModel:BM12",
+    "localization" : {
+      "localizationKey" : "PC12",
+      "nameVariable" : "OT"
+    }
+  }
+}

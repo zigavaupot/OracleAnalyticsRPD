@@ -1,0 +1,59 @@
+{
+  "presentationTable" : {
+    "name" : "Orders",
+    "presentationColumns" : [ {
+      "name" : "Channel",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Orders.Channel"
+    }, {
+      "name" : "Order Number",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Orders.Order Number"
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Orders.Order Status"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Orders.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Orders.TIME_PAID_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "hierarchies" : [ {
+      "name" : "Channel Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM10.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.All Orders"
+      }, {
+        "name" : "Channel",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.Channel",
+        "displayColumn" : "presentationColumn:PC10.Orders.Channel"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.Order",
+        "displayColumn" : "presentationColumn:PC10.Orders.Order Number"
+      } ]
+    }, {
+      "name" : "Order Status Hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM10.Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.All Orders"
+      }, {
+        "name" : "Order Status",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.Order Status",
+        "displayColumn" : "presentationColumn:PC10.Orders.Order Status"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:BM10.Orders.Order",
+        "displayColumn" : "presentationColumn:PC10.Orders.Order Number"
+      } ]
+    } ]
+  }
+}

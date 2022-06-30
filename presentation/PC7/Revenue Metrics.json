@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Billed Amount",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Billed Amount"
+    }, {
+      "name" : "CHANNEL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.CHANNEL_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.DISCNT_VALUE"
+    }, {
+      "name" : "Fixed costs",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Fixed costs"
+    }, {
+      "name" : "Nr of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Nr of Customers"
+    }, {
+      "name" : "Nr of Orders",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Nr of Orders"
+    }, {
+      "name" : "Nr of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Nr of Products"
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.ORDER_STATUS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Paid Units",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Paid Units"
+    }, {
+      "name" : "Paid Units LY",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Paid Units LY"
+    }, {
+      "name" : "Paid Units YTD",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Paid Units YTD"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.TIME_PAID_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM7.Revenue Metrics.Variable Costs"
+    } ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.# of Products"
+    }, {
+      "name" : "% of Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.% of Full Company Revenue"
+    }, {
+      "name" : "% of Quarterly Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.% of Quarterly Company Revenue"
+    }, {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Billed Amount",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Billed Amount"
+    }, {
+      "name" : "CHANNEL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.CHANNEL_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Discount Value"
+    }, {
+      "name" : "Fixed Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Fixed Costs"
+    }, {
+      "name" : "Full Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Full Company Revenue"
+    }, {
+      "name" : "ORDER_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.ORDER_STATUS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Paid Units",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Paid Units"
+    }, {
+      "name" : "Paid Units LY",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Paid Units LY"
+    }, {
+      "name" : "Paid Units YTD",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Paid Units YTD"
+    }, {
+      "name" : "Quarterly Company Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Quarterly Company Revenue"
+    }, {
+      "name" : "TIME_BILL_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.TIME_BILL_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.TIME_PAID_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Variable Costs",
+      "sourceLogicalColumn" : "logicalColumn:BM10.Revenue Metrics.Variable Costs"
+    } ]
+  }
+}

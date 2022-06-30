@@ -1,0 +1,82 @@
+{
+  "physicalTable" : {
+    "name" : "SH_SALES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CHANNEL_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROD_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "QUANTITY_SOLD",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "AMOUNT_SOLD",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "TIME_ID",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_CHANNELS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_SALES.CHANNEL_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_CHANNELS.CHANNEL_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_SALES.CUST_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_SALES.PROD_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_PRODUCTS.PROD_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_PROMOTIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_SALES.PROMO_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB2.CAT2.SCH2.SH_TIMES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_SALES.TIME_ID",
+        "rightColumn" : "physicalColumn:DB2.CAT2.SCH2.SH_TIMES.TIME_ID"
+      } ]
+    } ]
+  }
+}

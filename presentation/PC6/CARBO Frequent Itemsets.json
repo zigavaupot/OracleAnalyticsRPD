@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Frequent Itemsets",
+    "presentationColumns" : [ {
+      "name" : "# of Itemsets",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.# of Itemsets"
+    }, {
+      "name" : "ITEM_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.ITEM_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ITEM_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.ITEM_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Itemset Support",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.Itemset Support"
+    }, {
+      "name" : "NUMBER_OF_ITEMS",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.NUMBER_OF_ITEMS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PARTITION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Frequent Itemsets.PARTITION_NAME",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

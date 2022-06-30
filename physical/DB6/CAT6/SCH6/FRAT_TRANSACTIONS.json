@@ -1,0 +1,93 @@
+{
+  "physicalTable" : {
+    "name" : "FRAT_TRANSACTIONS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "HHS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_NUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BASE_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FEATURE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DISPLAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SPEND",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TPR_ONLY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "VISITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WEEK_END_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.DUNNHUMBY_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.WEEK_END_DATE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.DUNNHUMBY_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.FRAT_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.UPC",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_PRODUCTS.UPC"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.FRAT_STORES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_TRANSACTIONS.STORE_NUM",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.FRAT_STORES.STORE_ID"
+      } ]
+    } ]
+  }
+}

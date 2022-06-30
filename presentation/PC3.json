@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "PC3",
+    "sourceBusinessModel" : "businessModel:BM3",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC3.LEAD_SCORE_VW"
+    }, {
+      "name" : "presentationTable:PC3.LEAD_SCORE"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC3",
+      "nameVariable" : "LEAD SCORE"
+    }
+  }
+}

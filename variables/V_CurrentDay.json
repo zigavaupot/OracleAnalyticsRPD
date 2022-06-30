@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "V_CurrentDay",
+    "type" : "GLOBAL",
+    "connectionPool" : "connectionPool:VDB0.VCP",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select sysdate from dual"
+    } ],
+    "variables" : [ {
+      "name" : "V_CurrentDay",
+      "description" : "RAAS_",
+      "value" : " TIMESTAMP '2020-12-16 08:28:53'"
+    } ],
+    "runSchedule" : {
+      "interval" : 2,
+      "intervalUnit" : "DAYS",
+      "startingOn" : "2020-12-16 08:31:36"
+    },
+    "disable" : false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "physicalTable" : {
+    "name" : "D_PRODUCTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DOWNGRADE_FLAG",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 49,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_1",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_2",
+      "dataType" : "VARCHAR",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_3",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_4",
+      "dataType" : "VARCHAR",
+      "length" : 34,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "SPG_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "SPG_PARENT",
+      "dataType" : "VARCHAR",
+      "length" : 24,
+      "nullable" : true
+    }, {
+      "name" : "SALES_PRODUCT_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 27,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "ITEM_NUMBER" ], [ "ITEM_NUMBER" ], [ "ITEM_NUMBER" ], [ "ITEM_NUMBER" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

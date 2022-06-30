@@ -1,0 +1,72 @@
+{
+  "presentationTable" : {
+    "name" : "CARBO Transactions",
+    "presentationColumns" : [ {
+      "name" : "# of Baskets",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.# of Baskets"
+    }, {
+      "name" : "# of Households",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.# of Households"
+    }, {
+      "name" : "# of Products (UPC)",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.# of Products (UPC)"
+    }, {
+      "name" : "# of Stores",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.# of Stores"
+    }, {
+      "name" : "Basket",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Basket"
+    }, {
+      "name" : "Coupon",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Coupon"
+    }, {
+      "name" : "DAY_IN_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.DAY_IN_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DOLLAR_SALES",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.DOLLAR_SALES",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Day",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Geography",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Geography"
+    }, {
+      "name" : "Sales",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Sales"
+    }, {
+      "name" : "TRANSACTION_DATE",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.TRANSACTION_DATE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Time of transaction",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Time of transaction"
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Units"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.Week",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM6.CARBO Transactions.YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ]
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "CAL_HALF",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_HALF",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_MONTH_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_MONTH_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_QTR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_QTR_END_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_QTR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_QTR_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_QTR_START_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_TRIMESTER",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_TRIMESTER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_WEEK",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_WEEK_END_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_WEEK_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_WEEK_START_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_END_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR_END_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_END_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR_END_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_START_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR_START_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CAL_YEAR_START_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.CAL_YEAR_START_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DATE_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.DATE_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.DAY_OF_MONTH",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.DAY_OF_WEEK",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.DAY_OF_YEAR",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DAY_TS",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.DAY_TS",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Date"
+    }, {
+      "name" : "FST_DAY_CAL_MNTH_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.FST_DAY_CAL_MNTH_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_QTR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.FST_DAY_CAL_QTR_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_WK_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.FST_DAY_CAL_WK_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "FST_DAY_CAL_YEAR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.FST_DAY_CAL_YEAR_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Half Year",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Half Year"
+    }, {
+      "name" : "JULIAN_DAY_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_DAY_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_MONTH_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_MONTH_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_QTR_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_QTR_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_TER_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_TER_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_WEEK_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_WEEK_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "JULIAN_YEAR_NUM",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.JULIAN_YEAR_NUM",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_MNTH_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.LAST_DAY_CAL_MNTH_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_QTR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.LAST_DAY_CAL_QTR_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_WK_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.LAST_DAY_CAL_WK_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "LAST_DAY_CAL_YEAR_FLG",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.LAST_DAY_CAL_YEAR_FLG",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "M_END_CAL_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.M_END_CAL_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "M_STRT_CAL_DT_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.M_STRT_CAL_DT_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Month"
+    }, {
+      "name" : "PER_NAME_OFFSET_WK",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.PER_NAME_OFFSET_WK",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PER_NAME_TER",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.PER_NAME_TER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Quarter"
+    }, {
+      "name" : "W_DAY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.W_DAY_CODE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "W_MONTH_CODE",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.W_MONTH_CODE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Week"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:BM4.Time.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM4.Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Year",
+        "displayColumn" : "presentationColumn:PC4.Time.Year"
+      }, {
+        "name" : "Half Year",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Half Year",
+        "displayColumn" : "presentationColumn:PC4.Time.Half Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Quarter",
+        "displayColumn" : "presentationColumn:PC4.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Month",
+        "displayColumn" : "presentationColumn:PC4.Time.Month"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Week",
+        "displayColumn" : "presentationColumn:PC4.Time.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:BM4.Time.Day",
+        "displayColumn" : "presentationColumn:PC4.Time.Date"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "physicalTable" : {
+    "name" : "DUMMY_TABLE_DIM",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DUMMY_COLUMN",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    } ],
+    "additionalKeys" : [ [ "DUMMY_COLUMN" ] ]
+  }
+}

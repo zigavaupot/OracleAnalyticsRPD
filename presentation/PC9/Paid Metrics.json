@@ -1,0 +1,63 @@
+{
+  "presentationTable" : {
+    "name" : "Paid Metrics",
+    "presentationColumns" : [ {
+      "name" : "ADDR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.ADDR_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Avg Revenue per Unit",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.Avg Revenue per Unit"
+    }, {
+      "name" : "COST_FIXED",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.COST_FIXED",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "COST_VARIABLE",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.COST_VARIABLE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "CUST_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.CUST_NUMBER",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "DISCNT_VALUE",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.DISCNT_VALUE",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "ORDER_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.ORDER_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.PROD_ITEM_KEY",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.Revenue"
+    }, {
+      "name" : "TIME_PAID_DT",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.TIME_PAID_DT",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Units",
+      "sourceLogicalColumn" : "logicalColumn:BM9.Paid Metrics.Units"
+    } ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "physicalTable" : {
+    "name" : "CARBO_TRANSACTIONS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BASKET",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COUPON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GEOGRAPHY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "HOUSEHOLD",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME_OF_TRANSACTION",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WEEK",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SALES",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DOLLAR_SALES",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAY_IN_YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRANSACTION_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.STORE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.STORE"
+      }, {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.UPC",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.UPC"
+      }, {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.WEEK",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.WEEK"
+      }, {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.GEOGRAPHY",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_CAUSAL_LOOKUP.GEOGRAPHY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_HOUSEHOLDS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.HOUSEHOLD",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_HOUSEHOLDS.HOUSEHOLD"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.UPC",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.UPC"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.STORE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_STORE_LOOKUP_ENRICHED.STORE"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.DUNNHUMBY_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.TRANSACTION_DATE",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.DUNNHUMBY_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_TRANSACTIONS.UPC",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.V_CARBO_PRODUCT_CONSEQUENT.UPC"
+      } ]
+    } ]
+  }
+}

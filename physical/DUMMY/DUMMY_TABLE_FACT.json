@@ -1,0 +1,20 @@
+{
+  "physicalTable" : {
+    "name" : "DUMMY_TABLE_FACT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DUMMY_COLUMN",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "physicalTable:DUMMY.DUMMY_TABLE_DIM",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DUMMY.DUMMY_TABLE_FACT.DUMMY_COLUMN",
+        "rightColumn" : "physicalColumn:DUMMY.DUMMY_TABLE_DIM.DUMMY_COLUMN"
+      } ]
+    } ]
+  }
+}

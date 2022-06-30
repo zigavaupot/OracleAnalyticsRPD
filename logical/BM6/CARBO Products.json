@@ -1,0 +1,139 @@
+{
+  "logicalTable" : {
+    "name" : "CARBO Products",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "UPC" ],
+    "logicalColumns" : [ {
+      "name" : "Brand",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.BRAND" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Brand"
+    }, {
+      "name" : "Commodity",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.COMMODITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Product",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.PRODUCT_DESCRIPTION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Product Size",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.PRODUCT_SIZE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UPC",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.UPC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Product"
+    }, {
+      "name" : "Antecedent",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "CARBO_PRODUCT_LOOKUP_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.ANTECEDENT_CONSEQUENT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "CARBO_PRODUCT_LOOKUP_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Brand",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Brand" ],
+        "displayKey" : "Brand",
+        "chronologicalKey" : [ "Brand" ]
+      }, {
+        "name" : "Product",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "UPC" ],
+        "displayKey" : "Product",
+        "additionalKeys" : [ [ "Product" ] ],
+        "chronologicalKey" : [ "UPC" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "CARBO Products [branch at level 'Brand']",
+        "description" : "default hierarchy",
+        "levels" : [ "Total", "Brand", "Product" ]
+      } ]
+    }
+  }
+}

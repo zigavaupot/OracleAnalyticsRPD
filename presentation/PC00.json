@@ -1,0 +1,29 @@
+{
+  "subjectArea" : {
+    "name" : "PC00",
+    "sourceBusinessModel" : "businessModel:BM0",
+    "tableOrder" : [ {
+      "name" : "presentationTable:PC00.Customers"
+    }, {
+      "name" : "presentationTable:PC00.Geography"
+    }, {
+      "name" : "presentationTable:PC00.Orders"
+    }, {
+      "name" : "presentationTable:PC00.Products"
+    }, {
+      "name" : "presentationTable:PC00.Time"
+    }, {
+      "name" : "presentationTable:PC00.Advanced Calcs"
+    }, {
+      "name" : "presentationTable:PC00.Payment Metrics"
+    }, {
+      "name" : "presentationTable:PC00.Profit Metrics"
+    }, {
+      "name" : "presentationTable:PC00.Revenue Metrics"
+    } ],
+    "localization" : {
+      "localizationKey" : "PC0",
+      "nameVariable" : "OA Bootcamp Data Model"
+    }
+  }
+}

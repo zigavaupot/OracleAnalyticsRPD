@@ -1,0 +1,218 @@
+{
+  "logicalTable" : {
+    "name" : "Promotions",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PROMO_ID" ],
+    "logicalColumns" : [ {
+      "name" : "PROMO_CATEGORY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_CATEGORY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Promotion"
+    }, {
+      "name" : "PROMO_SUBCATEGORY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_SUBCATEGORY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROMO_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PROMO_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_TOTAL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Promotion Begin Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_BEGIN_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Promotion Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_CATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Promotion Category"
+    }, {
+      "name" : "Promotion Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_COST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Promotion End Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_END_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Promotion Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Promotion"
+    }, {
+      "name" : "Promotion Sub-Category",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_PROMOTIONS_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_PROMOTIONS.PROMO_SUBCATEGORY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Promotion Sub-Category"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SH_PROMOTIONS_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB2.CAT2.SCH2.SH_PROMOTIONS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Promotions",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Promotions",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Promotion Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Promotion Category" ],
+        "displayKey" : "Promotion Category",
+        "chronologicalKey" : [ "Promotion Category" ]
+      }, {
+        "name" : "Promotion Sub-Category",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Promotion Sub-Category" ],
+        "displayKey" : "Promotion Sub-Category",
+        "chronologicalKey" : [ "Promotion Sub-Category" ]
+      }, {
+        "name" : "Promotion",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PROMO_ID" ],
+        "displayKey" : "Promotion Name",
+        "additionalKeys" : [ [ "Promotion Name" ] ],
+        "chronologicalKey" : [ "PROMO_ID" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Promotions [branch at level 'Promotion Sub-Category']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Promotions", "Promotion Category", "Promotion Sub-Category", "Promotion" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "physicalTable" : {
+    "name" : "V_OTHER_MEASURES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON_EXTE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ADJ_BENCHMARK_EUR_PER_TON_EX_1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "AGE_RESTRICTION_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "AGE_RESTRICTION_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON_EXTERNAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BENCHMARK_EUR_PER_TON_EXTERN_1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BIRDS_EYE_SERVICES_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "BIRDS_EYE_SERVICES_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "BOM_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BOM_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "BUREAU_DE_VERITAS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CENTRAL_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CENTRAL_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COMMISSIONS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CONVERSION_COSTS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_DEBIT_NOTE_VALUE",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_INSURANCE_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 65,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_ACCOUNT_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_MODIFIERS_TOTAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_PARENT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 65,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_PROFILE",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "DEPRECIATION_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DEPRECIATION_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DFI_MARKET",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "DFI_SECTOR",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : true
+    }, {
+      "name" : "DIRECT_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DIRECT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DOCUMENTATION_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "DOCUMENTATION_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "DOWNGRADE_FLAG",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "END_APPLICATION_DFI",
+      "dataType" : "VARCHAR",
+      "length" : 19,
+      "nullable" : true
+    }, {
+      "name" : "EXCESS_STORAGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "EXTERNAL2_BENCHMARK_NAME_ORDE",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "EXTERNAL2_BENCHMARK_PRICE_ORD",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "EXTERNAL_BENCHMARK_NAME_ORDER",
+      "dataType" : "VARCHAR",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "EXTERNAL_BENCHMARK_PRICE_ORDE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "EXTRA_LABELLING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "EXTRA_LABELLING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "E_PALLET_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FIXED_MILK_PRICE_MODF_EUR_PER_",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GROSS_SALES_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GROSS_SELLING_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INDIRECT_COSTS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INDIRECT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_CHAR_",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_NUM_",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INTERNAL_BENCHMARK_PRICE_ORDE",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_MILK_COST_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_VALUE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 49,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_NUMBER",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "KOSHERING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "KOSHERING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LETTERS_CREDIT_FACT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LETTERS_OF_CREDIT_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_1",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_2",
+      "dataType" : "VARCHAR",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_3",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "LEVEL_4",
+      "dataType" : "VARCHAR",
+      "length" : 34,
+      "nullable" : true
+    }, {
+      "name" : "LOOSE_LOADING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "LOOSE_LOADING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MARGINAL_CONTN_TOTAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MARGINAL_CONTR_PER_TON_AFTER_M",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATURATION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MATURATION_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MILK_SOLIDS_COST",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MILK_SOLIDS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MILK_SOLIDS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MOISTURE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MOISTURE_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_CONTRIBUTION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_CONTRIBUTION_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_RETURN_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_RETURN_EUR_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_SALES_RETURN_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_SELLING_PRICE_EUR_PER_TON",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NET_SELLING_PRICE_VS_BENCHMARK",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NONPREM_DISCOUNT_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "NONPREM_DISCOUNT_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "NORMAL_STORAGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_ADJUSTED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNAL_",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNA_1",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OPPORTUNITY_COST_EUR_EXTERNA_2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDERED_DATE",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "ORGANISATION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "ORNUA_REALISATIONS_BONUS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PALLETIZING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_MODIFIERS_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_TESTING_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_TESTING_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REALISATIONS_AND_BONUS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REBATES_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "REBATE_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "RFT_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RFT_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RITTER_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "RITTER_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "SALES_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 11,
+      "nullable" : true
+    }, {
+      "name" : "SALES_PERSON",
+      "dataType" : "VARCHAR",
+      "length" : 18,
+      "nullable" : true
+    }, {
+      "name" : "SALES_PRODUCT_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 27,
+      "nullable" : true
+    }, {
+      "name" : "SHIPPED_QTY_TNS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SPECIALISED_PALLETS_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SPECIALIZED_PALLETS_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SPG_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "SPG_PARENT",
+      "dataType" : "VARCHAR",
+      "length" : 24,
+      "nullable" : true
+    }, {
+      "name" : "STORAGE_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STRATEGIC_RATING",
+      "dataType" : "VARCHAR",
+      "length" : 17,
+      "nullable" : true
+    }, {
+      "name" : "THROUGHPUT_ABSORPTION_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "THROUGHPUT_ABSORP_EUR_TN",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TRANSPORT_TOTAL_EUR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WORKING_CAPITAL_EUR",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "WORKING_CAPITAL_EUR_TN",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "YEAR_END_ADJUSTMENT_2",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.CUSTOMER_ACCOUNT_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_CUSTOMERS.CUSTOMER_ACCOUNT_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_INVOICES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.INVOICE_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_INVOICES.INVOICE_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_ORGANISATIONS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.ORGANISATION_NAME",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_ORGANISATIONS.ORGANISATION_NAME"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.ITEM_NUMBER",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_PRODUCTS.ITEM_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.ORDERED_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB5.CAT5.SCH5.D_TIME_INV",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB5.CAT5.SCH5.V_OTHER_MEASURES.INVOICE_DATE",
+        "rightColumn" : "physicalColumn:DB5.CAT5.SCH5.D_TIME_INV.DAY_DT"
+      } ]
+    } ]
+  }
+}

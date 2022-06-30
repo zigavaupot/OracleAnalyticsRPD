@@ -1,0 +1,551 @@
+{
+  "logicalTable": {
+    "name": "2 - Customer Modifiers",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Age Restriction ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.AGE_RESTRICTION_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Age Restriction ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.AGE_RESTRICTION_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Bureau De Veritas ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.BUREAU_DE_VERITAS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Bureau De Veritas ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.BUREAU_DE_VERITAS_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "CUSTOMER_ACCOUNT_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.CUSTOMER_ACCOUNT_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Commissions Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.COMMISSIONS_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Credit Insurance Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.CREDIT_INSURANCE_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Customer Modifiers Total",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.CUSTOMER_MODIFIERS_TOTAL"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Documentation ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.DOCUMENTATION_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Documentation ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.DOCUMENTATION_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Extra Labelling ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.EXTRA_LABELLING_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Extra Labelling ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.EXTRA_LABELLING_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "INVOICE_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.INVOICE_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ITEM_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Letters Credit Fact ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.LETTERS_OF_CREDIT_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Letters Credit Fact ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.LETTERS_CREDIT_FACT_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Loose Loading ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.LOOSE_LOADING_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Loose Loading ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.LOOSE_LOADING_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "INVOICE_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.INVOICE_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ORDERED_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ORDERED_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.ORGANISATION_NAME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Specialized Pallets ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.SPECIALISED_PALLETS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Specialized Pallets ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.SPECIALIZED_PALLETS_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Storage ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.STORAGE_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Transport Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.TRANSPORT_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Working Capital ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.WORKING_CAPITAL_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Working Capital ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Customer Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Customer Modifiers.WORKING_CAPITAL_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "V_Customer Modifiers_LTS",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:DB5.CAT5.SCH5.V_Customer Modifiers"
+          ]
+        }
+      }
+    ],
+    "joins": [      {
+        "rightTable": "logicalTable:BM5.Customers",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Invoices",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Organisations",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Products",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Invoice",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Order",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

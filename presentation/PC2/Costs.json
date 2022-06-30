@@ -1,0 +1,76 @@
+{
+  "presentationTable" : {
+    "name" : "Costs",
+    "presentationColumns" : [ {
+      "name" : "CHANNEL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.CHANNEL_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Cost per Unit",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.Cost per Unit"
+    }, {
+      "name" : "PROD_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.PROD_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "PROMO_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.PROMO_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "TIME_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.TIME_ID",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Unit Cost",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.Unit Cost",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    }, {
+      "name" : "Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:BM2.Costs.Unit Price",
+      "hideIfTrue" : {
+        "expressionTemplate" : "1 = 1"
+      }
+    } ],
+    "permissions" : [ {
+      "accessor" : "role:BIConsumer",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:BIContentAuthor",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:BIServiceAdministrator",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:DTLDemoAppRole",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:DVConsumer",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:DVContentAuthor",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:FRATManagers1",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:FRATManagers2",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:FRATSupplier1",
+      "access" : "NO_ACCESS"
+    }, {
+      "accessor" : "role:FRATSupplier2",
+      "access" : "NO_ACCESS"
+    } ]
+  }
+}

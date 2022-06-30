@@ -1,0 +1,777 @@
+{
+  "logicalTable": {
+    "name": "3 - Product Modifiers",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Birds Eye Services ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.BIRDS_EYE_SERVICES_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Birds Eye Services ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.BIRDS_EYE_SERVICES_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "CUSTOMER_ACCOUNT_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.CUSTOMER_ACCOUNT_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "E Pallet ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.E_PALLET_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "INVOICE_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INVOICE_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "INVOICE_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INVOICE_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ITEM_NUMBER",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ITEM_NUMBER"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Koshering ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.KOSHERING_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Koshering ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.KOSHERING_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Maturation ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MATURATION_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Maturation ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MATURATION_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Milk Solids ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MILK_SOLIDS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Milk Solids ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MILK_SOLIDS_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Moisture ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MOISTURE_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Moisture ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.MOISTURE_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "ORDERED_DATE",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ORDERED_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ORGANISATION_NAME",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.ORGANISATION_NAME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Palletizing ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.PALLETIZING_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Product Modifiers Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.PRODUCT_MODIFIERS_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Product Testing ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.PRODUCT_TESTING_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Product Testing ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.PRODUCT_TESTING_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Rft ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.RFT_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Rft ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.RFT_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Ritter ¤",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.RITTER_EUR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ritter ¤ Tn",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.RITTER_EUR_TN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Throughput Absorp ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.THROUGHPUT_ABSORPTION_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Throughput Absorp ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.THROUGHPUT_ABSORP_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "BOM ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.BOM_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Depreciation Costs ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.DEPRECIATION_COSTS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Indirect Costs ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INDIRECT_COSTS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Indirect ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.INDIRECT_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Direct ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.DIRECT_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Conversion Costs Total ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.CONVERSION_COSTS_TOTAL_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Direct Costs ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.DIRECT_COSTS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Central ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.CENTRAL_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "BOM ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.BOM_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Central Costs ¤",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.CENTRAL_COSTS_EUR"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      },
+      {
+        "name": "Depreciation ¤ Tn",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "V_Product Modifiers_LTS",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:DB5.CAT5.SCH5.V_Product Modifiers.DEPRECIATION_EUR_TN"
+                ]
+              }
+            }
+          ]
+        },
+        "aggregation": {
+          "rule": "SUM"
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "V_Product Modifiers_LTS",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:DB5.CAT5.SCH5.V_Product Modifiers"
+          ]
+        }
+      }
+    ],
+    "joins": [      {
+        "rightTable": "logicalTable:BM5.Customers",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Invoices",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Organisations",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Products",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Invoice",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      },
+      {
+        "rightTable": "logicalTable:BM5.Time - Order",
+        "joinType": "INNER",
+        "cardinality": "MANY_TO_ZERO_OR_ONE"
+      }
+    ]
+  }
+}

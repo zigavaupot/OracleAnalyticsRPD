@@ -1,0 +1,56 @@
+{
+  "physicalTable" : {
+    "name" : "DM$VTAR_CARBO_TRANS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ITEMSET_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    }, {
+      "name" : "SUPPORT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_ITEMS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PARTITION_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO Itemsets",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.ITEMSET_ID",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO Itemsets.ITEMSET_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB6.CAT6.SCH6.DM$VTAR_CARBO_TRANS.ITEM_NAME",
+        "rightColumn" : "physicalColumn:DB6.CAT6.SCH6.CARBO_PRODUCT_LOOKUP.ANTECEDENT_CONSEQUENT"
+      } ]
+    } ]
+  }
+}

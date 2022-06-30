@@ -1,0 +1,22 @@
+{
+  "presentationTable" : {
+    "name" : "Invoices",
+    "presentationColumns" : [ {
+      "name" : "Invoice Number",
+      "sourceLogicalColumn" : "logicalColumn:BM5.Invoices.Invoice Number"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Invoices Hierarchy",
+      "description" : "default hierarchy",
+      "sourceLogicalTable" : "logicalTable:BM5.Invoices",
+      "levels" : [ {
+        "name" : "All Invoices",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Invoices.All Invoices"
+      }, {
+        "name" : "Invoice",
+        "sourceLogicalLevel" : "logicalLevel:BM5.Invoices.Invoice",
+        "displayColumn" : "presentationColumn:PC5.Invoices.Invoice Number"
+      } ]
+    } ]
+  }
+}

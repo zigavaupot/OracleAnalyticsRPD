@@ -1,0 +1,566 @@
+{
+  "logicalTable" : {
+    "name" : "Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "CUST_ID" ],
+    "logicalColumns" : [ {
+      "name" : "COUNTRY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_ISO_CODE",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_ISO_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_NAME_HIST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_NAME_HIST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_REGION_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_REGION_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_SUBREGION_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_SUBREGION_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COUNTRY_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_TOTAL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_CITY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_CITY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_EFF_FROM",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_EFF_FROM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_EFF_TO",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_EFF_TO" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "CUST_MAIN_PHONE_NUMBER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_MAIN_PHONE_NUMBER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_SRC_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_SRC_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_STATE_PROVINCE_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_STATE_PROVINCE_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_TOTAL",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_TOTAL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_TOTAL_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_TOTAL_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUST_VALID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_VALID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "City"
+    }, {
+      "name" : "Country",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Country"
+    }, {
+      "name" : "Customer Credit Limit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_CREDIT_LIMIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer First Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_FIRST_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Gender",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_GENDER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer Gender"
+    }, {
+      "name" : "Customer Last Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_LAST_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_MARITAL_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer Marital Status"
+    }, {
+      "name" : "Customer Street Address",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_STREET_ADDRESS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer Year of Birth",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_YEAR_OF_BIRTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "E-Mail",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_EMAIL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Income Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_INCOME_LEVEL" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Postal Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_POSTAL_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_REGION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Region"
+    }, {
+      "name" : "State-Province",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.CUST_STATE_PROVINCE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "State-Province"
+    }, {
+      "name" : "Sub-Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SH_CUSTOMERS_COUNTRY_LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY.COUNTRY_SUBREGION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sub-Region"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SH_CUSTOMERS_COUNTRY_LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:DB2.CAT2.SCH2.SH_CUSTOMERS_COUNTRY" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Customers",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Customers",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Customer Gender",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Gender" ],
+        "displayKey" : "Customer Gender",
+        "chronologicalKey" : [ "Customer Gender" ]
+      }, {
+        "name" : "Customer",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "CUST_ID" ],
+        "displayKey" : "Customer First Name",
+        "additionalKeys" : [ [ "Customer First Name", "Customer Last Name" ] ],
+        "chronologicalKey" : [ "CUST_ID" ]
+      }, {
+        "name" : "Customer Marital Status",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Marital Status" ],
+        "displayKey" : "Customer Marital Status",
+        "chronologicalKey" : [ "Customer Marital Status" ]
+      }, {
+        "name" : "Region",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Region" ],
+        "displayKey" : "Region",
+        "chronologicalKey" : [ "Region" ]
+      }, {
+        "name" : "Sub-Region",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Sub-Region" ],
+        "displayKey" : "Sub-Region",
+        "chronologicalKey" : [ "Sub-Region" ]
+      }, {
+        "name" : "Country",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Country" ],
+        "displayKey" : "Country",
+        "chronologicalKey" : [ "Country" ]
+      }, {
+        "name" : "State-Province",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "State-Province" ],
+        "displayKey" : "State-Province",
+        "chronologicalKey" : [ "State-Province" ]
+      }, {
+        "name" : "City",
+        "numberOfElements" : 2000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "City" ],
+        "displayKey" : "City",
+        "chronologicalKey" : [ "City" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Customers [branch at level 'Customer Gender']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Customer Gender", "Customer" ]
+      }, {
+        "name" : "Customers [branch at level 'Customer Marital Status']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Customer Marital Status", "Customer" ]
+      }, {
+        "name" : "Customers [branch at level 'City']",
+        "description" : "default hierarchy",
+        "levels" : [ "All Customers", "Region", "Sub-Region", "Country", "State-Province", "City", "Customer" ]
+      } ]
+    }
+  }
+}

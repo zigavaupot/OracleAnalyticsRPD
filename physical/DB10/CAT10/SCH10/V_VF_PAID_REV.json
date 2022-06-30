@@ -1,0 +1,90 @@
+{
+  "physicalTable" : {
+    "name" : "V_VF_PAID_REV",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ADDR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_FIXED",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COST_VARIABLE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_NUMBER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DISCNT_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROD_ITEM_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TIME_PAID_DT",
+      "dataType" : "DATETIME",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "UNITS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:DB10.CAT10.SCH10.D_CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB10.CAT10.SCH10.V_VF_PAID_REV.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:DB10.CAT10.SCH10.D_CUSTOMERS.CUST_NUMBER"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB10.CAT10.SCH10.D_GEOGRAPHY",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB10.CAT10.SCH10.V_VF_PAID_REV.ADDR_KEY",
+        "rightColumn" : "physicalColumn:DB10.CAT10.SCH10.D_GEOGRAPHY.ADDR_KEY"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB10.CAT10.SCH10.D_TIME_KP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB10.CAT10.SCH10.V_VF_PAID_REV.TIME_PAID_DT",
+        "rightColumn" : "physicalColumn:DB10.CAT10.SCH10.D_TIME_KP.DAY_DT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:DB10.CAT10.SCH10.VD_ORDERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:DB10.CAT10.SCH10.V_VF_PAID_REV.ORDER_KEY",
+        "rightColumn" : "physicalColumn:DB10.CAT10.SCH10.VD_ORDERS.ORDER_KEY"
+      } ]
+    } ]
+  }
+}
