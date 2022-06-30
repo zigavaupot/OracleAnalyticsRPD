@@ -1,6 +1,6 @@
 {
   "subjectArea" : {
-    "name" : "PC00",
+    "name" : "PC00 OA Bootcamp",
     "sourceBusinessModel" : "businessModel:BM0",
     "tableOrder" : [ {
       "name" : "presentationTable:PC00.Customers"
